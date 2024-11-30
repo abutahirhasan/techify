@@ -2,11 +2,11 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-$heading-font: "Syne", sans-serif;
-$sub-font: "Syne", sans-serif;
-$body-font: "Outfit", sans-serif;
+$heading-font: "Archivo", sans-serif;
+$sub-font: "Archivo", sans-serif;
+$body-font: "Archivo", sans-serif;
 
 .heading-font {
 	font-family: $heading-font;
@@ -17,9 +17,6 @@ $body-font: "Outfit", sans-serif;
 .body-font {
 	font-family: $body-font;
 }
-.body-bg{
-	background: $body;
-}
 
 //font-family: "Font Awesome 6 Free";
 $fa: "Font Awesome 6 Free";
@@ -29,7 +26,7 @@ html {
 }
 
 body {
-	font-family: $body-font;
+	font-family: "Archivo", sans-serif;
 	background: #F5F6F8;
 	font-weight: normal;
 	line-height: 28px;
@@ -72,6 +69,13 @@ h6 {
 	padding: 0;
 	color: $header-color;
 	@include transition;
+	transition: all 0.4s;
+	a{
+		transition: all 0.4s;
+	}
+	span{
+		transition: all 0.4s;
+	}
 }
 
 h1 {
@@ -189,11 +193,14 @@ span {
 	margin: 0px;
 	@include transition;
 }
+i{
+	transition: all 0.4s;
+}
 
 // Custom Container
 .container {
-	// max-width: 1340px;
-	// margin: 0 auto;
+	max-width: 1320px;
+	margin: 0 auto;
 }
 // Custom Container
 
@@ -236,6 +243,9 @@ footer {
 }
 .cmn-bg {
 	background: var(--cmnbg);
+}
+.white-clr{
+	color: $white;
 }
 .n100-clr {
 	color: var(--n100-clr);

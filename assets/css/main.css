@@ -6,24 +6,26 @@ Description: MediZen - Health & Medical HTML Template<
 Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --body: #F5F6F8;
-  --black: #090A0B;
+  --black: #000000;
   --white: #fff;
-  --p1-clr: #BEFF6B;
-  --p2-clr: #14B8A6;
-  --p3-clr: rgba(255, 181, 37, 1);
+  --p1-clr: #FB421F;
+  --p2-clr: #3E89FF;
+  --p3-clr: #FF90E7;
+  --p4-clr: #27DAB7;
+  --p5-clr: #FFDC26;
   --blogbox: #EFEFEF;
-  --cmnbg: #F5F6F8;
+  --cmnbg: #F6F2EA;
   --n100-clr: rgba(235, 243, 246, 1);
   --n200-clr: rgba(221, 221, 221, 1);
   --n700-clr: rgba(36, 36, 38, 1);
-  --n800-clr: rgba(49, 49, 49, 1);
-  --n900-clr: #090A0B;
+  --n800-clr: #535353;
+  --n900-clr: #000000;
   --theme: rgba(32, 109, 255, 1);
-  --pra: #666666;
-  --cmn-border: #CCC;
+  --pra: #535353;
+  --cmn-border: #E3E3E3;
   --pra2: #DDD;
   --text: #666666;
   --cmnwhite: #CBCBCC;
@@ -172,19 +174,15 @@ Version: 1.0.0
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 .heading-font {
-  font-family: "Syne", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 .sub-font {
-  font-family: "Syne", sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 .body-font {
-  font-family: "Outfit", sans-serif;
-}
-
-.body-bg {
-  background: var(--body);
+  font-family: "Archivo", sans-serif;
 }
 
 html {
@@ -192,7 +190,7 @@ html {
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Archivo", sans-serif;
   background: #F5F6F8;
   font-weight: normal;
   line-height: 28px;
@@ -230,11 +228,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Syne", sans-serif;
+  font-family: "Archivo", sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
   transition: all 0.4s ease-in-out;
+  transition: all 0.4s;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  transition: all 0.4s;
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  transition: all 0.4s;
 }
 
 h1 {
@@ -375,7 +390,7 @@ a {
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
-  font-family: "Outfit", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 16px;
   line-height: 25.6px;
 }
@@ -385,6 +400,15 @@ span {
   line-height: 25.6px;
   margin: 0px;
   transition: all 0.4s ease-in-out;
+}
+
+i {
+  transition: all 0.4s;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 section,
@@ -434,6 +458,10 @@ footer {
 
 .cmn-bg {
   background: var(--cmnbg);
+}
+
+.white-clr {
+  color: var(--white);
 }
 
 .n100-clr {
@@ -681,8 +709,9 @@ footer {
   }
 }
 
-.tahr {
-  display: none;
+.custom-container-space {
+  max-width: 1750px;
+  margin: 0 auto;
 }
 
 .social-wrapper a {
@@ -1840,7 +1869,7 @@ footer {
 .footer-widgets-wrapper .single-footer-widget .list-area li a {
   color: var(--pra2);
   font-size: 16px;
-  font-family: "Outfit", sans-serif;
+  font-family: "Archivo", sans-serif;
   display: flex;
   align-items: center;
   position: relative;
@@ -2094,14 +2123,12 @@ footer {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: transparent;
 }
 
 .header-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
 }
 .header-main .main-menu ul {
   margin-bottom: 0;
@@ -2117,22 +2144,22 @@ footer {
 }
 .header-main .main-menu ul li a {
   display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--black);
-  padding: 16px 0;
+  padding: 13px 0;
   text-align: left;
-  font-family: "Outfit", sans-serif;
+  font-family: "Archivo", sans-serif;
   position: relative;
-  text-transform: capitalize;
+  text-transform: uppercase;
   transition: all 0.4s ease-in-out;
 }
 .header-main .main-menu ul li a i {
   margin-left: 2px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .header-main .main-menu ul li a:hover {
-  color: var(--p2-clr) !important;
+  color: var(--p1-clr) !important;
 }
 .header-main .main-menu ul li .submenu {
   position: absolute;
@@ -2161,12 +2188,12 @@ footer {
 .header-main .main-menu ul li .submenu li a {
   position: relative;
   z-index: 11;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--black);
-  padding: 0 18px;
-  padding-bottom: 11px;
-  padding-top: 11px;
+  padding: 0 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
   width: 100%;
   border-bottom: 1px solid #eeeeee;
   border-radius: 5px;
@@ -2181,7 +2208,7 @@ footer {
   opacity: 0;
 }
 .header-main .main-menu ul li .submenu li:hover > a {
-  background: var(--p2-clr);
+  background: var(--p1-clr);
   color: var(--white) !important;
 }
 .header-main .main-menu ul li .submenu li:hover > a::after {
@@ -2208,7 +2235,7 @@ footer {
   color: var(--p2-clr);
 }
 .header-main .main-menu ul li .has-homemenu {
-  width: 500px;
+  width: 750px;
   padding: 30px 30px 10px 30px;
   opacity: 0;
   left: 0px;
@@ -2216,10 +2243,17 @@ footer {
   padding: 20px 20px 20px 20px;
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items {
-  display: flex;
-  align-items: center;
   gap: 18px;
   justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .header-main .main-menu ul li .has-homemenu .homemenu-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu {
+    width: 31.3333333333%;
+  }
 }
 @media (max-width: 991px) {
   .header-main .main-menu ul li .has-homemenu .homemenu-items {
@@ -2250,12 +2284,16 @@ footer {
   margin-top: 20px;
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn {
-  padding: 14px 20px;
+  padding: 11px 14px 10px;
   color: var(--white) !important;
   width: initial;
-  font-size: 14px;
+  font-size: 13px !important;
   text-align: center;
-  border-radius: 0;
+  border-radius: 14px;
+}
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn span {
+  font-size: 13px;
+  color: var(--white);
 }
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn:hover {
   color: var(--white) !important;
@@ -2302,10 +2340,10 @@ footer {
   font-size: 16px;
 }
 .header-main .main-menu ul li:hover > a {
-  color: var(--p2-clr);
+  color: var(--p1-clr);
 }
 .header-main .main-menu ul li:hover > a::after {
-  color: var(--p2-clr);
+  color: var(--p1-clr);
 }
 .header-main .main-menu ul li:hover > .submenu {
   visibility: visible;
@@ -2322,8 +2360,7 @@ footer {
 }
 
 .header-1 {
-  background: #f5f6f8;
-  padding-top: 30px;
+  transition: all 0.5s;
 }
 .header-1 .mega-menu-wrapper {
   border-radius: 100px;
@@ -2334,6 +2371,14 @@ footer {
   display: flex;
   align-items: center;
   gap: 60px;
+}
+.header-1 .header-main .header-left .header-logo {
+  max-width: 140px;
+  display: block;
+}
+.header-1 .header-main .header-left .header-logo img {
+  width: 100%;
+  object-fit: contain;
 }
 @media (max-width: 1899px) {
   .header-1 .header-main .header-left {
@@ -2400,7 +2445,7 @@ footer {
 }
 @media (max-width: 1399px) {
   .header-1 .header-main .header-right {
-    gap: 7px;
+    gap: 12px;
   }
 }
 .header-1 .header-main .header-right .search-icon {
@@ -2430,13 +2475,22 @@ footer {
     display: none;
   }
 }
-.header-1.header-style2 {
-  padding-top: 0;
+.header-1 .call-version1 {
+  transition: all 0.4s;
 }
-.header-1.header-style2 .mega-menu-wrapper {
-  border-radius: initial;
-  background: transparent;
-  padding: 0 0 0 0;
+.header-1 .call-version1 .icon {
+  width: 37px;
+  height: 37px;
+  transition: all 0.4s;
+}
+.header-1 .call-version1:hover {
+  background: var(--p1-clr);
+}
+.header-1 .call-version1:hover .icon {
+  background: var(--white) !important;
+}
+.header-1 .call-version1:hover .icon i {
+  color: var(--p1-clr);
 }
 @media (max-width: 1199px) {
   .header-1 .mega-menu-wrapper {
@@ -2460,39 +2514,26 @@ footer {
     width: 100%;
   }
 }
+.header-1.header-version1 {
+  padding: 20px 0;
+}
+.header-1.header-version1.sticky {
+  background: var(--white);
+  position: sticky;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 999;
+  top: 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+@media (max-width: 1199px) {
+  .header-1.header-version1 {
+    padding: 16px 0;
+  }
+}
 
 .sidebar__toggle {
   cursor: pointer;
-}
-
-.sticky-header1.sticky {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  transition: all 0.9s;
-  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-}
-.sticky-header1.sticky .mega-menu-wrapper {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background: #EFEFEF !important;
-}
-.sticky-header1 .mega-menu-wrapper {
-  background: #F5F6F8 !important;
-}
-
-.header-style2.sticky {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  transition: all 0.9s;
-  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @media (min-width: 1200px) {
@@ -2502,8 +2543,8 @@ footer {
 }
 
 .offcanvas__info {
-  background: var(--cmnbg) none repeat scroll 0 0;
-  border-left: 2px solid var(--p2-clr);
+  background: var(--white) none repeat scroll 0 0;
+  border-left: 2px solid var(--p1-clr);
   position: fixed;
   right: 0;
   top: 0;
@@ -2549,7 +2590,7 @@ footer {
   line-height: 40px;
   text-align: center;
   border-radius: 4px;
-  background-color: var(--p2-clr);
+  background-color: var(--p1-clr);
   position: relative;
   z-index: 9;
   cursor: pointer;
@@ -3607,7 +3648,7 @@ footer {
 .text-slide-item {
   font-size: 44px;
   font-weight: 700;
-  font-family: "Syne", sans-serif;
+  font-family: "Archivo", sans-serif;
   color: var(--black);
 }
 @media (max-width: 1199px) {
@@ -4443,7 +4484,7 @@ footer {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Syne", sans-serif, "Outfit", sans-serif;
+  font: bold 5em "Archivo", sans-serif, "Archivo", sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -4483,7 +4524,7 @@ footer {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Syne", sans-serif;
+  font-family: "Archivo", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
