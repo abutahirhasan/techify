@@ -1,0 +1,80 @@
+//Appoentment
+.appoentment-forms {
+	border-radius: 20px;
+	background: $white;
+	padding: 32px 40px;
+	input,
+	textarea {
+		width: 100%;
+		border-radius: 20px;
+		padding: 14px 24px;
+		background: #f5f6f8;
+		color: $pra;
+		border: unset;
+		outline: none;
+	}
+	::placeholder {
+		color: $pra;
+	}
+	.common-btn {
+		&:hover {
+			img {
+				filter: brightness(0);
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 24px 20px;
+	}
+}
+.apoentment-thumb {
+	@include breakpoint(max-lg) {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+}
+//Appoentment
+
+//Video Event
+.video-section {
+	position: relative;
+	z-index: 1;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: "";
+		height: 230px;
+		background: var(--n900-clr);
+	}
+	.video-uniquewrap {
+		.video-choose {
+			width: 113px;
+			height: 113px;
+			min-width: 113px;
+			i {
+				font-size: 29px;
+				color: var(--n900-clr);
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		&::before {
+			height: 150px;
+		}
+		.video-uniquewrap {
+			.video-choose {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+				i {
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}
+//Video Event

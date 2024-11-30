@@ -1,0 +1,124 @@
+//service
+.service-item {
+	padding: 30px 30px;
+	transition: all 0.4s;
+	.icon-area {
+		margin-bottom: 30px;
+		.icon {
+			width: 80px;
+			height: 80px;
+			min-width: 80px;
+			border: 1px solid var(--cmn-border);
+			border-radius: 50%;
+			transition: all 0.4s;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	.service-btn-inner {
+		margin-top: -30px;
+	}
+	.common-btn {
+		border: 1px solid var(--cmn-border);
+	}
+	&:hover {
+		transform: translateY(5px);
+		.icon {
+			background: $p1-clr;
+			border-color: $p1-clr;
+		}
+		.common-btn {
+			background: $p1-clr;
+			border-color: $p1-clr;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 19px 19px;
+		.icon-area {
+			margin-bottom: 16px;
+			.icon {
+				width: 60px;
+				height: 60px;
+				min-width: 60px;
+				img{
+					width: 30px;
+				}
+			}
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.service-btn-inner {
+			margin-top: -30px;
+		}
+		.common-btn {
+			border: 1px solid var(--cmn-border);
+		}
+	}
+}
+.services-section{
+	&.main-style{
+		.service-item{
+			.icon{
+				border: unset;
+			}
+		}
+	}
+}
+
+//Service Details
+.category-service{
+	.cates{
+		display: grid;
+		gap: 20px;
+		li{
+			a{
+				border: 1px solid #ccc;
+				padding: 12px 20px;
+				border-radius: 100px;
+				.just-serial{
+					font-size: 16px;
+					color: $pra;
+				}
+				transition: all 0.5s;
+				&:hover{
+					background: $p2-clr;
+					border-color: $p2-clr;
+					span,
+					i{
+						color: $white !important;
+					}
+				}
+			}
+		}
+	}
+}
+.download-area{
+	display: grid;
+	gap: 20px;
+	.download-item{
+		background: #F5F6F8;
+		border-radius: 20px;
+		padding: 16px 24px;
+	}
+	.social-wrapper{
+		a{
+			background: #F5F6F8;
+			i{
+				color: $black;
+			}
+			&:hover{
+				background: $p2-clr;
+				i{
+					color: $white;
+				}
+				svg{
+					path{
+						stroke: $white;
+					}
+				}
+			}
+		}
+	}
+}
