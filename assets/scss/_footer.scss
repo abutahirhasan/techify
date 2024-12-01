@@ -1,8 +1,15 @@
 .footer-section {
 	position: relative;
+	z-index: 1;
 	&.style1{
 		.footer-content{
 			max-width: 350px;
+		}
+		.footer-ele1{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
 		}
 	}
 }
@@ -72,6 +79,8 @@
 		}
 	}
 }
+
+//Common Social 
 .social-wrapper {
 	a {
 		width: 40px;
@@ -93,7 +102,6 @@
 		}
 	}
 }
-
 
 //Newsletter
 .newsletter-wrap {

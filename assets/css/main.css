@@ -1715,9 +1715,16 @@ footer {
 
 .footer-section {
   position: relative;
+  z-index: 1;
 }
 .footer-section.style1 .footer-content {
   max-width: 350px;
+}
+.footer-section.style1 .footer-ele1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .footer-widgets-wrapper .single-footer-widget .widget-head {
