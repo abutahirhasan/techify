@@ -1,90 +1,125 @@
-.faq-left {
-	.nav {
-		display: grid;
-
-		@include breakpoint(max-lg) {
-			@include flex;
-			gap: 10px;
-			justify-content: center;
-		}
-
-		.nav-link {
-			font-weight: 700;
-			font-size: 18px;
-			text-transform: capitalize;
-			color: $header-color;
-
-			&.active {
-				color: $p2-clr;
-			}
-		}
-	}
-}
-
-.faq-content {
+//Faq Section
+.custom-accordion {
+	display: grid;
+	gap: 30px;
 	.accordion-item {
-		border: 0;
-		background-color: $white;
-		box-shadow: $shadow;
-
+		border: unset;
 		.accordion-header {
+			line-height: 30px;
 			.accordion-button {
-				font-weight: 700;
-				color: $p2-clr;
-				letter-spacing: -0.2px;
-				border: 0;
-				border-radius: 0;
-				box-shadow: none;
-				background-color: $white;
-				padding: 25px 30px 0;
-				text-transform: capitalize;
-				font-size: 20px;
-				border: none;
-
+				font-size: 17px;
+				font-weight: 600;
+				font-family: $body-font;
+				padding: 0 0;
+				outline: none;
+			}
+			.accordion-button {
 				&::after {
-					// content: "\2b";
-					// font-family: "Font Awesome 6 Free";
-					// background: transparent;
-					font-weight: 500;
-					transition: all 0.3s ease-in-out !important;
-					background-image: url(../../assets/img/chevron-right.svg);
-					color: $theme-color-2;
+					content: "";
+					background-image: none;
+					width: 16px;
+					height: 2px;
+					background: $black;
 				}
-				&:not(.collapsed)::after {
-					// content: "\f068";
-					// font-family: "Font Awesome 6 Free";
-					// background: transparent;
-					background-image: url(../../assets/img/chevron-down.svg);
-					font-weight: 500;
-					color: $p2-clr;
-					transform: rotate(0);
-				}
-
-				&.collapsed {
-					background-color: transparent;
-					padding: 25px 30px;
-					color: $header-color;
+				&::before {
+					position: absolute;
+					right: 7px;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 2px;
+					height: 16px;
+					content: "";
+					background: $black;
 				}
 			}
-		}
-
-		.accordion-collapse {
-			.accordion-body {
-				padding-right: 130px;
-				padding-left: 30px;
-				padding-top: 15px;
-				color: $text-color;
-				background-color: $white;
-				padding-bottom: 25px;
-
-				@include breakpoint(max-xxl) {
-					padding-right: 50px;
+			.accordion-button:not(.collapsed) {
+				color: $black;
+				box-shadow: none;
+				outline: none;
+				border-left: 5px solid $p2-clr;
+				&::before {
+					display: none;
 				}
+			}
+			.accordion-button:focus {
+				z-index: 3;
+				outline: 0;
+				box-shadow: none;
+			}
+		}
+		.accordion-body {
+			padding: 0 0;
+		}
+	}
+	.line {
+		width: 100%;
+		height: 1px;
+		background: rgb(0, 0, 0, 0.1);
+	}
+	@include breakpoint(max-xl) {
+		gap: 20px;
+		.accordion-item {
+			border: unset;
+			.accordion-header {
+				line-height: 24px;
+				.accordion-button {
+					font-size: 18px;
+				}
+				.accordion-button::after {
+					content: "";
+					background-image: none !important;
+					background-repeat: no-repeat;
+				}
+				.accordion-button:not(.collapsed) {
+					color: $black;
+					box-shadow: none;
+					outline: none;
+				}
+				.accordion-button:focus {
+					z-index: 3;
+					outline: 0;
+					box-shadow: none;
+				}
+			}
+			.accordion-body {
+				padding: 0 0;
+			}
+		}
+	}
+	&.accordion-style1{
 
-				@include breakpoint(max-lg) {
-					padding-right: 30px;
+	}
+	&.white-version {
+		.line {
+			width: 100%;
+			height: 1px;
+			background: rgba(255, 255, 255, 0.1);
+		}
+		.accordion-item {
+			border: unset;
+			.accordion-header {
+				.accordion-button {
+					color: $white;
+				}
+				.accordion-button {
+					&::after {
+						background: $white;
+					}
+					&::before {
+						background: $white;
+					}
+				}
+				.accordion-button:not(.collapsed) {
+					color: $white;
+				}
+			}
+			.accordion-body {
+				padding: 0 0;
+				p{
+					color: rgb(255, 255, 255, 0.7);
 				}
 			}
 		}
 	}
 }
+//Faq Section
