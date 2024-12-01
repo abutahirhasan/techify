@@ -63,23 +63,17 @@ CSS TABLE OF CONTENTS
 
 		//Accordion Items active class
 		const accordionButtons = document.querySelectorAll(".accordion-button");
+
 		accordionButtons.forEach((button) => {
 			button.addEventListener("click", function () {
+				// Remove 'active' class from all accordion items
+				document
+					.querySelectorAll(".accordion-item.active")
+					.forEach((item) => item.classList.remove("active"));
+
+				// Add 'active' class to the parent of the clicked button
 				const parentItem = button.closest(".accordion-item");
-
-				// Check if the parent item already has the 'active' class
-				if (parentItem.classList.contains("active")) {
-					// Remove the 'active' class
-					parentItem.classList.remove("active");
-				} else {
-					// Remove 'active' class from all accordion items
-					document
-						.querySelectorAll(".accordion-item.active")
-						.forEach((item) => item.classList.remove("active"));
-
-					// Add the 'active' class to the current item
-					parentItem.classList.add("active");
-				}
+				parentItem.classList.add("active");
 			});
 		});
 
