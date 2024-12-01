@@ -15,7 +15,7 @@
 	.content {
 		.blog-arrow1 {
 			.arrows {
-				transform: rotate(-30deg);
+				// transform: rotate(-30deg);
 			}
 		}
 	}
@@ -37,6 +37,11 @@
 			background: $p1-clr !important;
 			i{
 				color: $white !important;
+			}
+			svg{
+				path{
+					stroke: $white;
+				}
 			}
 		}
 	}

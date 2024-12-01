@@ -3722,9 +3722,6 @@ footer {
   overflow: hidden;
   transition: all 0.5s;
 }
-.blog-items .content .blog-arrow1 .arrows {
-  transform: rotate(-30deg);
-}
 .blog-items:hover .thumb img {
   transform: scale(1.1);
 }
@@ -3738,6 +3735,9 @@ footer {
 }
 .blog-arrow1:hover .arrows i {
   color: var(--white) !important;
+}
+.blog-arrow1:hover .arrows svg path {
+  stroke: var(--white);
 }
 
 .blog-details-left {
