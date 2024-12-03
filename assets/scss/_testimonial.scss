@@ -18,7 +18,7 @@
 	background: $black;
 	border-radius: 20px;
 	padding: 80px 80px;
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 60px 16px 40px;
 	}
 }
@@ -62,7 +62,7 @@
 			width: 210px;
 			width: 210px;
 			min-width: 210px;
-			img{
+			img {
 				width: 100%;
 				height: 100%;
 			}
@@ -87,7 +87,7 @@
 			width: 210px;
 			min-width: initial;
 			margin: 0 auto;
-			img{
+			img {
 				width: 100%;
 				height: 100%;
 			}
@@ -104,3 +104,43 @@
 	}
 }
 //Testimonial
+
+//Sponsor Section
+.sponsor-items1 {
+	.sponsor-text {
+		max-width: 250px;
+		height: 46px;
+		object-fit: contain;
+	}
+	.sponsor-icon {
+		max-width: 70px;
+		object-fit: contain;
+		height: 50px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	@include breakpoint(max-xxl) {
+		.sponsor-icon {
+			max-width: 40px;
+			object-fit: contain;
+			height: 36px;
+		}
+		.sponsor-text {
+			max-width: 150px;
+			height: 46px;
+			object-fit: contain;
+		}
+	}
+	@include breakpoint(max-md) {
+		.sponsor-icon {
+			max-width: 30px;
+			object-fit: contain;
+			height: 30px;
+		}
+		.sponsor-text {
+			max-width: 100px;
+			height: 36px;
+			object-fit: contain;
+		}
+	}
+}

@@ -179,6 +179,37 @@ CSS TABLE OF CONTENTS
 				},
 			},
 		});
+
+		//--Sponsor One
+		const sponsorWrapper = new Swiper(".sponsor-wrapper", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+				},
+				991: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				520: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				0: {
+					slidesPerView: 2,
+					spaceBetween: 14,
+				},
+			},
+		});
+
+		//Not Use this code bottom ----------------+++++==
 		//--Text Custom Slide
 		const sponsor__text__slide = new Swiper(".sponsor-text-slide", {
 			speed: 6000,
