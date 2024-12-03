@@ -209,6 +209,31 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//--Testimonial Slide
+		const teamWrapper = new Swiper(".team-wrapper", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//Not Use this code bottom ----------------+++++==
 		//--Text Custom Slide
 		const sponsor__text__slide = new Swiper(".sponsor-text-slide", {

@@ -91,6 +91,17 @@
 			}
 		}
 	}
+	&.btn6 {
+		&::before {
+			background: $black;
+		}
+		&:hover {
+			color: $black !important;
+			i {
+				color: $black !important;
+			}
+		}
+	}
 	&:hover {
 		&::before {
 			width: 400%;
