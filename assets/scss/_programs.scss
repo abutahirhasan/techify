@@ -166,15 +166,6 @@
 .latest-projects {
 	position: relative;
 	z-index: 1;
-	.array-button {
-		button {
-			background: var(--cmnbg);
-			border-color: var(--cmnbg);
-			&.active {
-				background: var(--p1-clr);
-			}
-		}
-	}
 	&::before{
 		position: absolute;
 		bottom: 0;

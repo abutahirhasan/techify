@@ -68,7 +68,6 @@
 }
 //Video Css End
 
-
 //pagination default
 .swiper-dot {
 	margin-bottom: 2px;
@@ -105,42 +104,41 @@
 }
 
 .array-button {
-	gap: 15px;
-
-	.array-prev {
-		width: 50px;
-		height: 50px;
+	.array-prev,
+	.array-next {
+		width: 55px;
+		height: 55px;
 		text-align: center;
-		border: 1px solid $p1-clr;
 		color: $p1-clr;
+		background: $bg-color-4;
 		border-radius: 50%;
 		@include transition;
-		i{
-			font-size: 20px;
+		i {
+			font-size: 19px;
 		}
-
+		&.active,
 		&:hover {
-			background-color: $p1-clr;
+			background-color: $p2-clr;
 			color: $white;
+			i {
+				color: $white !important;
+			}
 		}
 	}
-
-	.array-next {
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		text-align: center;
-		border: 1px solid $p1-clr;
-		color: $p1-clr;
-		border-radius: 50%;
-		@include transition;
-		i{
-			font-size: 20px;
-		}
-
-		&:hover {
-			background-color: $p1-clr;
-			color: $white;
+	&.verstion-2 {
+		.array-prev,
+		.array-next {
+			background: #1A1705;
+			i{
+				color: $p5-clr !important;
+			}
+			&.active,
+			&:hover {
+				background-color: $p5-clr;
+				i {
+					color: $black !important;
+				}
+			}
 		}
 	}
 }
@@ -159,50 +157,50 @@ br {
 
 .mt-60 {
 	margin-top: 55px;
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		margin-bottom: 45px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		margin-bottom: 38px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		margin-bottom: 30px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		margin-bottom: 24;
 	}
 }
 .mb-60 {
 	margin-bottom: 55px;
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		margin-bottom: 45px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		margin-bottom: 38px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		margin-bottom: 30px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		margin-bottom: 24;
 	}
 }
 
 .mb-40 {
 	margin-bottom: 40px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		margin-bottom: 30px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		margin-bottom: 20px;
 	}
 }
 .mt-40 {
 	margin-top: 40px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		margin-top: 30px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		margin-top: 20px;
 	}
 }
@@ -440,4 +438,3 @@ br {
 .pt-80 {
 	padding-top: 80px;
 }
-
