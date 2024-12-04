@@ -1248,6 +1248,78 @@ footer {
     transform: translateX(-50%);
   }
 }
+.cmn-video {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: var(--p1-clr);
+  z-index: 1;
+}
+.cmn-video i {
+  font-size: 17px;
+  color: var(--white);
+}
+.cmn-video::before, .cmn-video::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 1px solid var(--p1-clr);
+  border-radius: 50%;
+}
+.cmn-video::before {
+  transition: all 0.3s;
+  animation: scsl 2s linear infinite;
+}
+.cmn-video::after {
+  transition: all 0.4s;
+  animation: scsl2 3s linear infinite;
+}
+@keyframes scsl {
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.09);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  90% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+@keyframes scsl2 {
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.09);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 0.3;
+  }
+  90% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
 .brand-wrapper {
   margin-top: -5px;
 }
@@ -1370,75 +1442,79 @@ footer {
   transform: rotate(5deg);
 }
 
-.appoentment-forms {
+.worke-items {
+  padding: 20px 40px;
   border-radius: 20px;
-  background: var(--white);
-  padding: 32px 40px;
-}
-.appoentment-forms input,
-.appoentment-forms textarea {
-  width: 100%;
-  border-radius: 20px;
-  padding: 14px 24px;
-  background: #f5f6f8;
-  color: var(--pra);
-  border: unset;
-  outline: none;
-}
-.appoentment-forms ::placeholder {
-  color: var(--pra);
-}
-.appoentment-forms .common-btn:hover img {
-  filter: brightness(0);
-}
-@media (max-width: 1199px) {
-  .appoentment-forms {
-    padding: 24px 20px;
-  }
-}
-
-@media (max-width: 991px) {
-  .apoentment-thumb {
-    width: 100%;
-  }
-  .apoentment-thumb img {
-    width: 100%;
-  }
-}
-
-.video-section {
-  position: relative;
   z-index: 1;
+  margin-bottom: 40px;
 }
-.video-section::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  content: "";
-  height: 230px;
-  background: var(--n900-clr);
+.worke-items .step-area {
+  z-index: 1;
+  position: relative;
 }
-.video-section .video-uniquewrap .video-choose {
-  width: 113px;
-  height: 113px;
-  min-width: 113px;
+.worke-items .step-area .texts {
+  border-left: 1px solid #e3e3e3;
+  padding-left: 10px;
 }
-.video-section .video-uniquewrap .video-choose i {
-  font-size: 29px;
-  color: var(--n900-clr);
+.worke-items .step-area .serial {
+  font-family: Archivo;
+  font-size: 51.797px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -3px;
+  color: rgba(83, 83, 83, 0.2);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(83, 83, 83, 0.2);
+  margin-left: -15px;
+  z-index: -1;
+}
+.worke-items .rarrow {
+  width: 125px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  margin-bottom: -40px;
+}
+.worke-items:hover .rarrow {
+  background: var(--p2-clr);
+}
+.worke-items:hover .rarrow svg path {
+  stroke: var(--white);
+  fill: var(--white);
 }
 @media (max-width: 1199px) {
-  .video-section::before {
-    height: 150px;
+  .worke-items {
+    padding: 18px 20px;
   }
-  .video-section .video-uniquewrap .video-choose {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
+}
+
+.about-exchange-content p {
+  font-size: 20px;
+  line-height: 28px;
+}
+.about-exchange-content .listing-exchange {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-exchange-content .listing-exchange li {
+  width: 50%;
+  padding: 7px 14px;
+}
+@media (max-width: 991px) {
+  .about-exchange-content h2 {
+    font-size: 29px;
   }
-  .video-section .video-uniquewrap .video-choose i {
-    font-size: 17px;
+  .about-exchange-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about-exchange-content .listing-exchange {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-exchange-content .listing-exchange li {
+    width: 100%;
+    padding: 2px 5px;
   }
 }
 

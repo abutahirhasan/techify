@@ -1,80 +1,80 @@
-//Appoentment
-.appoentment-forms {
+//Working Section
+.worke-items {
+	padding: 20px 40px;
 	border-radius: 20px;
-	background: $white;
-	padding: 32px 40px;
-	input,
-	textarea {
-		width: 100%;
-		border-radius: 20px;
-		padding: 14px 24px;
-		background: #f5f6f8;
-		color: $pra;
-		border: unset;
-		outline: none;
-	}
-	::placeholder {
-		color: $pra;
-	}
-	.common-btn {
-		&:hover {
-			img {
-				filter: brightness(0);
-			}
-		}
-	}
-	@include breakpoint(max-xl) {
-		padding: 24px 20px;
-	}
-}
-.apoentment-thumb {
-	@include breakpoint(max-lg) {
-		width: 100%;
-		img {
-			width: 100%;
-		}
-	}
-}
-//Appoentment
-
-//Video Event
-.video-section {
-	position: relative;
 	z-index: 1;
-	&::before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		content: "";
-		height: 230px;
-		background: var(--n900-clr);
-	}
-	.video-uniquewrap {
-		.video-choose {
-			width: 113px;
-			height: 113px;
-			min-width: 113px;
-			i {
-				font-size: 29px;
-				color: var(--n900-clr);
-			}
+	.step-area {
+		z-index: 1;
+		position: relative;
+		.texts {
+			border-left: 1px solid #e3e3e3;
+			padding-left: 10px;
+		}
+		.serial {
+			font-family: Archivo;
+			font-size: 51.797px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 54px;
+			letter-spacing: -3px;
+			color: rgb(83, 83, 83, 0.2);
+			-webkit-text-fill-color: white;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: rgb(83, 83, 83, 0.2);
+			margin-left: -15px;
+			z-index: -1;
 		}
 	}
-	@include breakpoint(max-xl) {
-		&::before {
-			height: 150px;
-		}
-		.video-uniquewrap {
-			.video-choose {
-				width: 60px;
-				height: 60px;
-				min-width: 60px;
-				i {
-					font-size: 17px;
+	.rarrow {
+		width: 125px;
+		box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+		margin-bottom: -40px;
+	}
+	&:hover {
+		.rarrow {
+			background: $p2-clr;
+			svg {
+				path {
+					stroke: $white;
+					fill: $white;
 				}
 			}
 		}
 	}
+	margin-bottom: 40px;
+	@include breakpoint(max-xl) {
+		padding: 18px 20px;
+	}
 }
-//Video Event
+.about-exchange-content {
+	p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.listing-exchange {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			width: calc(100% / 2);
+			padding: 7px 14px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		h2{
+			font-size: 29px;
+		}
+		p {
+			font-size: 16px;
+			line-height: 22px;
+		}
+		.listing-exchange {
+			display: flex;
+			flex-wrap: wrap;
+			li {
+				width: calc(100%);
+				padding: 2px 5px;
+			}
+		}
+	}
+}
+//Working Section
