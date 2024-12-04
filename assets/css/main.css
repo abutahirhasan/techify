@@ -205,6 +205,20 @@ Version: 1.0.0
   fill: var(--p2-clr);
 }
 
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.4s;
+}
+.read-more-btn:hover {
+  color: var(--p1-clr) !important;
+}
+.read-more-btn:hover i {
+  color: var(--p1-clr);
+  padding-left: 8px;
+}
+
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -670,29 +684,6 @@ footer {
     transform: rotate(7deg);
   }
 }
-.about-content2 .about-point {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-@media (max-width: 767px) {
-  .about-content2 .about-point {
-    gap: 26px 24px;
-  }
-}
-@media (max-width: 575px) {
-  .about-content2 .about-point {
-    flex-wrap: wrap;
-    gap: 18px 24px;
-  }
-  .about-content2 .about-point .about-point-item img {
-    width: 50px;
-  }
-  .about-content2 .about-point .about-point-item h4 {
-    line-height: 22px;
-  }
-}
-
 .faq-section {
   position: relative;
   z-index: 1;
@@ -1500,6 +1491,29 @@ footer {
   width: 50%;
   padding: 7px 14px;
 }
+.about-exchange-content.style2 .about-display2 .about-display-item .icon {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+}
+.about-exchange-content.style2 .about-display2 .about-display-item .small-pra {
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 1199px) {
+  .about-exchange-content.style2 .about-display2 .about-display-item .icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .about-exchange-content.style2 .about-display2 .about-display-item .icon img {
+    width: 24px;
+  }
+  .about-exchange-content.style2 .about-display2 .about-display-item .small-pra {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 @media (max-width: 991px) {
   .about-exchange-content h2 {
     font-size: 29px;
@@ -1515,6 +1529,68 @@ footer {
   .about-exchange-content .listing-exchange li {
     width: 100%;
     padding: 2px 5px;
+  }
+}
+
+.about-thumb-version2 .dot-ele {
+  position: absolute;
+  left: 80px;
+  bottom: 70px;
+  animation: updown 2s linear infinite;
+}
+.about-thumb-version2 .about-counting-box1 {
+  padding: 15px 40px;
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  animation: updown 2s linear infinite;
+}
+.about-thumb-version2 .about-counting-box1 h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.about-thumb-version2 .about-counting-box1 h3 span {
+  font-size: 50px;
+  font-weight: 600;
+}
+.about-thumb-version2 .about-counting-box2 {
+  border: 2px solid var(--white);
+  padding: 15px 35px;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 10px;
+}
+.about-thumb-version2 .about-counting-box2 h3 {
+  color: #2b2b5e;
+  font-size: 27px;
+  font-weight: 600;
+}
+.about-thumb-version2 .about-counting-box2 h3 span {
+  color: #2b2b5e;
+  font-size: 27px;
+  font-weight: 500;
+}
+@media (max-width: 1399px) {
+  .about-thumb-version2 .about-counting-box1 {
+    padding: 15px 40px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    animation: updown 2s linear infinite;
+  }
+  .about-thumb-version2 .about-counting-box1 h3 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .about-thumb-version2 .about-counting-box1 h3 span {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  .about-thumb-version2 .about-counting-box1 {
+    display: none;
   }
 }
 
@@ -4546,6 +4622,55 @@ input.main-search-input::placeholder {
   .process-wrap .process-item .process-pra .arrow {
     transform: scale(1);
   }
+}
+
+.empower-heading p {
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .empower-heading p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .empower-heading p {
+    font-size: 16px;
+  }
+}
+
+.empower-item {
+  padding: 30px 30px;
+  transition: all 0.4s;
+}
+.empower-item .icon {
+  background: var(--p5-clr);
+  width: 80px;
+  height: 80px;
+  transition: all 0.4s;
+}
+.empower-item .serial {
+  font-size: 51.797px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -3px;
+  color: rgba(83, 83, 83, 0.2);
+  -webkit-text-fill-color: rgba(83, 83, 83, 0.2);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(83, 83, 83, 0.2);
+}
+.empower-item:hover {
+  background: var(--p5-clr);
+}
+.empower-item:hover p {
+  color: var(--black);
+}
+.empower-item:hover .icon {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .section-title {

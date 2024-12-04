@@ -66,29 +66,6 @@
 	}
 }
 
-//About Style 2
-.about-content2{
-	.about-point{
-		display: flex;
-		align-items: center;
-		gap: 60px;
-		@include breakpoint(max-md){
-			gap: 26px 24px;
-		}
-		@include breakpoint(max-sm){
-			flex-wrap: wrap;
-			gap: 18px 24px;
-			.about-point-item{
-				img{
-					width: 50px;
-				}
-				h4{
-					line-height: 22px;
-				}
-			}
-		}
-	}
-}
 
 
 

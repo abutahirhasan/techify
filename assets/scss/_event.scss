@@ -59,8 +59,41 @@
 			padding: 7px 14px;
 		}
 	}
+	&.style2 {
+		.about-display2 {
+			.about-display-item {
+				.icon {
+					width: 65px;
+					height: 65px;
+					min-width: 65px;
+				}
+				.small-pra {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+		@include breakpoint(max-xl) {
+			.about-display2 {
+				.about-display-item {
+					.icon {
+						width: 50px;
+						height: 50px;
+						min-width: 50px;
+						img {
+							width: 24px;
+						}
+					}
+					.small-pra {
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
 	@include breakpoint(max-lg) {
-		h2{
+		h2 {
 			font-size: 29px;
 		}
 		p {
@@ -74,6 +107,69 @@
 				width: calc(100%);
 				padding: 2px 5px;
 			}
+		}
+	}
+}
+.about-thumb-version2 {
+	.dot-ele {
+		position: absolute;
+		left: 80px;
+		bottom: 70px;
+		animation: updown 2s linear infinite;
+	}
+	.about-counting-box1 {
+		padding: 15px 40px;
+		position: absolute;
+		top: 50px;
+		right: -50px;
+		animation: updown 2s linear infinite;
+		h3 {
+			font-size: 50px;
+			font-weight: 600;
+			span {
+				font-size: 50px;
+				font-weight: 600;
+			}
+		}
+	}
+	.about-counting-box2 {
+		border: 2px solid $white;
+		padding: 15px 35px;
+		position: absolute;
+		z-index: 1;
+		bottom: 20px;
+		left: 10px;
+		h3 {
+			color: #2b2b5e;
+			font-size: 27px;
+			font-weight: 600;
+			span {
+				color: #2b2b5e;
+				font-size: 27px;
+				font-weight: 500;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.about-counting-box1 {
+			padding: 15px 40px;
+			position: absolute;
+			top: 14px;
+			right: 10px;
+			animation: updown 2s linear infinite;
+			h3 {
+				font-size: 50px;
+				font-weight: 600;
+				span {
+					font-size: 50px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xs){
+		.about-counting-box1{
+			display: none;
 		}
 	}
 }

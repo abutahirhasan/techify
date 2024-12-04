@@ -174,4 +174,18 @@
 		}
 	}
 }
+
+.read-more-btn{
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	transition: all 0.4s;
+	&:hover{
+		color: $p1-clr !important;
+		i{
+			color: $p1-clr;
+			padding-left: 8px;
+		}
+	}
+}
 //>>>>> Component Button End <<<<<//

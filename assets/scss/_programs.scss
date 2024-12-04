@@ -50,7 +50,7 @@
 					width: 55px;
 					height: 55px;
 					min-width: 55px;
-					svg{
+					svg {
 						width: 18px;
 						height: 30px;
 					}
@@ -73,7 +73,7 @@
 					width: 55px;
 					height: 55px;
 					min-width: 55px;
-					svg{
+					svg {
 						width: 18px;
 						height: 30px;
 					}
@@ -97,3 +97,57 @@
 	}
 }
 //Process Section
+
+//Empower Section
+.empower-section {
+}
+.empower-heading {
+	p {
+		font-size: 20px;
+		line-height: 26px;
+		max-width: 850px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	@include breakpoint(max-lg){
+		p{
+			font-size: 17px;
+		}
+	}
+	@include breakpoint(max-md){
+		p{
+			font-size: 16px;
+		}
+	}
+}
+.empower-item {
+	padding: 30px 30px;
+	transition: all 0.4s;
+	.icon{
+		background: $p5-clr;
+		width: 80px;
+		height: 80px;
+		transition: all 0.4s;
+	}
+	.serial {
+		font-size: 51.797px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 54px;
+		letter-spacing: -3px;
+		color: rgb(83, 83, 83, 0.2);
+		-webkit-text-fill-color: rgb(83, 83, 83, 0.2);
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: rgb(83, 83, 83, 0.2);
+	}
+	&:hover{
+		background: $p5-clr;
+		p{
+			color: $black;
+		}
+		.icon{
+			background: rgb(0, 0, 0, 0.2);
+		}
+	}
+}
+//Empower Section
