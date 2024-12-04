@@ -2334,6 +2334,19 @@ footer {
 .header-main .sidebar__toggle img {
   width: 30px;
 }
+.header-main .sidebar__toggle.style2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-main .sidebar__toggle.style2 img {
+  width: 24px;
+  object-fit: contain;
+}
 
 .header-1 {
   transition: all 0.5s;
@@ -2512,12 +2525,6 @@ footer {
   cursor: pointer;
 }
 
-@media (min-width: 1200px) {
-  .fix-area {
-    display: none !important;
-  }
-}
-
 .offcanvas__info {
   background: var(--white) none repeat scroll 0 0;
   border-left: 2px solid var(--p1-clr);
@@ -2623,9 +2630,9 @@ footer {
   gap: 10px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
   text-align: center;
   font-size: 16px;
   display: block;
