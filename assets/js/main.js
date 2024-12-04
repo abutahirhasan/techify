@@ -1,10 +1,10 @@
 /*-----------------------------------------------------------------
 
-Template Name: MediZen - Health & Medical HTML Template<
+Template Name: Techify - Technology Tt Solutions HTML Template<
 Author:  authorName
 Author URI: https://themeforest.net/user/authorName/portfolio
 Version: 1.0.0
-Description: MediZen - Health & Medical HTML Template<
+Description: Techify - Technology Tt Solutions HTML Template<
 
 -------------------------------------------------------------------
 CSS TABLE OF CONTENTS
