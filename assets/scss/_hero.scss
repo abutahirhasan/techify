@@ -37,8 +37,8 @@
 			}
 		}
 	}
-	.hero1-thumb{
-		.arrows{
+	.hero1-thumb {
+		.arrows {
 			width: 60px;
 			height: 60px;
 			min-width: 60px;
@@ -46,15 +46,125 @@
 			right: 0;
 			top: 0;
 			transition: all 0.4s;
-			&:hover{
+			&:hover {
 				background: $p1-clr;
-				svg{
-					path{
+				svg {
+					path {
 						stroke: $white;
 						fill: $white;
 					}
 				}
 			}
+		}
+	}
+	.banner-listing {
+		position: relative;
+		background: $p2-clr;
+		border-radius: 20px;
+		padding: 40px 55px;
+		height: 100%;
+	}
+	.hero-thumb2 {
+		position: absolute;
+		bottom: 0;
+		right: 30px;
+	}
+	.home1-ele1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.home1-ele2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+	@include breakpoint(max-xl) {
+		.hero-content-version1 {
+			h1 {
+				font-size: 58px;
+				letter-spacing: -3px;
+				font-weight: 500;
+				line-height: 60px;
+				.stext {
+					font-size: 58px;
+					letter-spacing: -3px;
+					line-height: 60px;
+				}
+			}
+		}
+		.hero-thumb2 {
+			right: 0px;
+		}
+		.banner-listing {
+			padding: 24px 30px 24px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		.hero-content-version1 {
+			h1 {
+				font-size: 58px;
+				letter-spacing: -3px;
+				font-weight: 500;
+				line-height: 60px;
+				.stext {
+					font-size: 58px;
+					letter-spacing: -3px;
+					line-height: 60px;
+				}
+			}
+		}
+		.hero-thumb2 {
+			right: 0px;
+			max-width: 250px;
+		}
+		.banner-listing {
+			padding: 24px 30px 24px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		.hero-content-version1 {
+			h1 {
+				font-size: 44px;
+				letter-spacing: -3px;
+				font-weight: 500;
+				line-height: 48px;
+				.stext {
+					font-size: 44px;
+					letter-spacing: -3px;
+					line-height: 48px;
+				}
+			}
+		}
+		.hero-thumb2 {
+			right: 0px;
+			max-width: 250px;
+		}
+		.banner-listing {
+			padding: 24px 30px 24px;
+		}
+	}
+	@include breakpoint(max-xs) {
+		.hero-content-version1 {
+			h1 {
+				font-size: 44px;
+				letter-spacing: -3px;
+				font-weight: 500;
+				line-height: 48px;
+				.stext {
+					font-size: 44px;
+					letter-spacing: -3px;
+					line-height: 48px;
+				}
+			}
+		}
+		.hero-thumb2 {
+			display: none;
+		}
+		.banner-listing {
+			padding: 24px 30px 24px;
 		}
 	}
 }
