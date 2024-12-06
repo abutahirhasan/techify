@@ -23,6 +23,7 @@
 			a {
 				border: 1px solid $white;
 				width: 32px;
+				min-width: 32px;
 				height: 32px;
 				border-radius: 50%;
 				i {
@@ -37,7 +38,7 @@
 					background: $p1-clr;
 					border-color: $p1-clr;
 					i {
-						color: $black;
+						color: $white;
 					}
 				}
 			}

@@ -65,6 +65,11 @@
 		transition: all 0.7s ease;
 		z-index: -1;
 	}
+	&.btn1{
+		&::before{
+			background: $black;
+		}
+	}
 	&.btn2 {
 		&::before {
 			background: $p2-clr;
