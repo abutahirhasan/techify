@@ -22,8 +22,8 @@
 					right: 7px;
 					display: inline-block;
 					font-family: "Font Awesome 5 Free";
-					font-weight: 900; 
-					content: "\f067"; 
+					font-weight: 900;
+					content: "\f067";
 					vertical-align: middle;
 					width: 40px;
 					height: 40px;
@@ -35,7 +35,7 @@
 					justify-content: center;
 					color: $white;
 				}
-				@include breakpoint(max-sm){
+				@include breakpoint(max-sm) {
 					padding-right: 50px;
 				}
 			}
@@ -47,8 +47,8 @@
 					display: none;
 					display: inline-block;
 					font-family: "Font Awesome 5 Free";
-					font-weight: 900; 
-					content: "\f068"; 
+					font-weight: 900;
+					content: "\f068";
 					vertical-align: middle;
 					display: flex;
 					align-items: center;
@@ -107,6 +107,33 @@
 			transition: all 0.4s;
 			&.active {
 				border-color: $p2-clr;
+			}
+		}
+	}
+	&.accordion-style2 {
+		.accordion-item {
+			border-radius: 100px !important;
+			.accordion-header {
+				.accordion-button {
+					&::after {
+						display: none;
+					}
+					&::before {
+						content: "\f061";
+						background: $cmnbg;
+						color: $black;
+					}
+				}
+				.accordion-button:not(.collapsed) {
+					&::before {
+						content: "\f063";
+						background: $p2-clr;
+						color: $white;
+					}
+				}
+			}
+			&.active{
+				border-radius: 10px !important;
 			}
 		}
 	}

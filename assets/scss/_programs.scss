@@ -183,7 +183,7 @@
 	}
 	@include breakpoint(max-xxxl) {
 		.content {
-			h3{
+			h3 {
 				font-size: 19px;
 			}
 		}
@@ -191,10 +191,125 @@
 	@include breakpoint(max-lg) {
 		.content {
 			padding: 16px 29px 16px 16px;
-			h3{
+			h3 {
 				font-size: 17px;
 			}
 		}
 	}
 }
 //fronter Section
+
+//Tech Pro Style
+.tech-service-item {
+	.tech-pro {
+		width: 80px;
+		height: 80px;
+		background: rgb(255, 255, 255, 20%);
+	}
+	.scales {
+		transition: all 0.4s;
+		overflow: hidden;
+	}
+	.count {
+		span {
+			font-size: 50px;
+			font-weight: 800;
+			color: $black;
+		}
+	}
+}
+.tech-counter {
+	padding: 24px 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px 16px;
+	.tech-counter-item {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	@include breakpoint(max-xxl) {
+		h2 {
+			span {
+				font-size: 36px;
+				line-height: 46px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		gap: 20px 16px;
+		.tech-counter-item {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			h2 {
+				span {
+					font-size: 36px;
+					line-height: 46px;
+				}
+			}
+		}
+	}
+}
+.network-item {
+	&:hover {
+		.rarrow {
+			background: $p2-clr !important;
+			svg {
+				path {
+					fill: $white;
+					stroke: $white;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl){
+		img{
+			max-width: 250px;
+		}
+	}
+	@include breakpoint(max-lg){
+		img{
+			max-width: 150px;
+			display: none;
+		}
+		padding: 20px;
+	}
+}
+.tech-project-item {
+	h2 {
+		span {
+			font-size: 50px;
+			line-height: 60px;
+			color: $white;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		h2 {
+			span {
+				font-size: 36px;
+				line-height: 46px;
+			}
+		}
+	}
+	@include breakpoint(max-lg){
+		.main-man{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	@include breakpoint(max-sm){
+		.main-man{
+			display: none;
+		}
+	}
+}
+.last-counting{
+	@include breakpoint(max-sm){
+		display: grid !important;
+	}
+}
+//Tech Pro Style

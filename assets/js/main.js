@@ -209,6 +209,35 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//--Sponsor Two
+		const sponsorWrapper2 = new Swiper(".sponsor-wrapper2", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 5,
+				},
+				991: {
+					slidesPerView: 4,
+					spaceBetween: 14,
+				},
+				520: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				0: {
+					slidesPerView: 2,
+					spaceBetween: 14,
+				},
+			},
+		});
+
 		//--Fronter Slide
 		const fronterWrapper = new Swiper(".fronter-wrapper", {
 			spaceBetween: 24,
