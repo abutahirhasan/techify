@@ -209,6 +209,39 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//--Fronter Slide
+		const fronterWrapper = new Swiper(".fronter-wrapper", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4.3,
+				},
+				991: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				767: {
+					slidesPerView: 3,
+					spaceBetween: 14,
+				},
+				575: {
+					slidesPerView: 2.5,
+					spaceBetween: 14,
+				},
+				0: {
+					slidesPerView: 1.2,
+					spaceBetween: 14,
+				},
+			},
+		});
+
 		//--Testimonial Slide
 		const teamWrapper = new Swiper(".team-wrapper", {
 			spaceBetween: 24,

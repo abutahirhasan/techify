@@ -4673,6 +4673,44 @@ input.main-search-input::placeholder {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.fronter-wrapper .swiper-slide.swiper-slide-active .fornter-items img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.fronter-wrapper .swiper-slide.swiper-slide-active .fornter-items .content {
+  bottom: 24px;
+}
+
+.fornter-items {
+  z-index: 1;
+}
+.fornter-items img {
+  transition: all 0.4s;
+}
+.fornter-items .content {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  border-radius: 0 100px 100px 0;
+  padding: 20px 38px 20px 20px;
+  border: 1px solid var(--p1-clr);
+  border-left: unset;
+  transition: all 0.5s;
+}
+@media (max-width: 1600px) {
+  .fornter-items .content h3 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 991px) {
+  .fornter-items .content {
+    padding: 16px 29px 16px 16px;
+  }
+  .fornter-items .content h3 {
+    font-size: 17px;
+  }
+}
+
 .section-title {
   position: relative;
 }
