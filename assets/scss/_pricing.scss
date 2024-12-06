@@ -1,54 +1,88 @@
 //Pricing
-.pricing-items{
+.pricing-items {
 	padding: 30px 30px;
-	h2{
+	h2 {
 		font-size: 50px;
 		color: $black;
-		span{
+		span {
 			font-size: 16px;
 			color: $black2;
 		}
 	}
-	&.premium-items{
-		background: linear-gradient(180deg, #FFDC26 0%, rgba(255, 220, 38, 0.00) 100%);
-		.common-btn{
+	&.premium-items {
+		background: linear-gradient(
+			180deg,
+			#ffdc26 0%,
+			rgba(255, 220, 38, 0) 100%
+		);
+		.common-btn {
 			background: $p5-clr;
 		}
 	}
-	@include breakpoint(max-xxl){
+	&.style2 {
+		.common-btn {
+			border-color: $cmnbg !important;
+		}
+		&.active,
+		&:hover {
+			background: linear-gradient(
+				180deg,
+				#FB421F 0%,
+				rgba(255, 220, 38, 0) 100%
+			);
+			h2{
+				border-bottom: 1px solid rgba(34, 34, 32, 0.288) !important;
+				span{
+					color: $black;
+				}
+			}
+			.price-list{
+				li{
+					color: $black;
+				}
+			}
+			.common-btn {
+				background: $p1-clr !important;
+				color: $white !important;
+				i {
+					color: $white !important;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
 		padding: 24px 20px;
 	}
 }
-.pricing-tabbing{
+.pricing-tabbing {
 	border: 1px solid $border-color;
 	border-radius: 100px;
 	overflow: hidden;
-	.nav-item{
-		.nav-link{
+	.nav-item {
+		.nav-link {
 			padding: 14px 28px;
 			font-size: 17px;
 			background: transparent;
 			border: unset;
 			transition: all 0.4s;
 			color: $black;
-			&.active{
+			&.active {
 				background: $p2-clr;
 				color: $white;
 				border-radius: 0;
 			}
-			@include breakpoint(max-xxl){
+			@include breakpoint(max-xxl) {
 				padding: 10px 28px;
 			}
 		}
 	}
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		margin: 0 auto;
-		.nav-link{
+		.nav-link {
 			margin: 0 auto;
 		}
 	}
 }
-
 
 @keyframes cir360 {
 	0% {

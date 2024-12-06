@@ -144,3 +144,36 @@
 		}
 	}
 }
+
+//Testimonial Items2
+.testimonial-item2{
+	padding: 60px 60px;
+	p{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	@include breakpoint(max-xl){
+		padding: 40px 34px;
+	}
+	@include breakpoint(max-lg){
+		padding: 34px 20px;
+	}
+	@include breakpoint(max-xs){
+		padding: 30px 18px;
+	}
+	@include breakpoint(max-xl){
+		p{
+			font-size: 22px;
+			line-height: 32px;
+		}
+	}
+	@include breakpoint(max-lg){
+		p{
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.quote2{
+			width: 40px;
+		}
+	}
+}
