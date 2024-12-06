@@ -26,6 +26,13 @@
 			}
 		}
 	}
+	&.style2{
+		border-bottom: 5px solid $white;
+		transition: all 0.4s;
+		&:hover{
+			border-bottom: 5px solid $p1-clr;
+		}
+	}
 }
 .blog-arrow1 {
 	&:hover {

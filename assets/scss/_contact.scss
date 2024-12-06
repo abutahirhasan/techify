@@ -1,6 +1,94 @@
 //Contact
-.contact-wrapper-anys{
-	
+.getin-wrappper {
+	border: 1px solid $black;
+	gap: 38px;
+	@include breakpoint(max-xxl){
+		gap: 10px;
+	}
+	@include breakpoint(max-md){
+		gap: 10px;
+		flex-wrap: wrap;
+
+		.thumb-getin{
+			width: 100%;
+		}
+	}
+}
+.get-inform {
+	width: 650px;
+	padding: 0 0 0 60px;
+	h3 {
+		font-size: 50px;
+		line-height: 60px;
+	}
+	input,
+	textarea,
+	.nice-select {
+		width: 100%;
+		outline: none;
+		border-top: 1px solid $black;
+		border-bottom: 3px solid $black;
+		border-left: 1px solid $black;
+		border-right: 1px solid $black;
+		border-radius: 100px;
+		background: $cmnbg;
+		font-size: 20px;
+		padding: 14px 22px;
+		color: $pra;
+		&::placeholder {
+			color: $pra;
+		}
+	}
+	textarea {
+		border-radius: 20px;
+	}
+	.nice-select {
+		outline: none;
+		border-top: 1px solid $black !important;
+		border-bottom: 3px solid $black !important;
+		border-left: 1px solid $black !important;
+		border-right: 1px solid $black !important;
+		.list {
+			width: 100%;
+			right: 0;
+			li {
+				background: $white;
+			}
+		}
+		.current {
+			color: $pra !important;
+			font-size: 20px;
+		}
+		&.open {
+			border-top: 1px solid $black;
+			border-bottom: 3px solid $black;
+			border-left: 1px solid $black;
+			border-right: 1px solid $black;
+		}
+		&::after {
+			right: 18px;
+			top: 20px;
+			margin-top: 0;
+		}
+		&:hover {
+			border-top: 1px solid $black;
+			border-bottom: 3px solid $black;
+			border-left: 1px solid $black;
+			border-right: 1px solid $black;
+		}
+	}
+	@include breakpoint(max-xl){
+		padding: 16px 0 16px 30px;
+	}
+	@include breakpoint(max-md){
+		padding: 20px 20px 30px 20px;
+	}
+	@include breakpoint(max-sm){
+		h3{
+			font-size: 34px;
+			line-height: 44px;
+		}
+	}
 }
 
 .contact-info-area {

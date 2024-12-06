@@ -1,14 +1,104 @@
 .footer-section {
 	position: relative;
 	z-index: 1;
-	&.style1{
-		.footer-content{
+	&.style1 {
+		.footer-content {
 			max-width: 350px;
 		}
-		.footer-ele1{
+		.footer-ele1 {
 			position: absolute;
 			left: 0;
 			top: 0;
+			z-index: -1;
+		}
+	}
+	&.style2 {
+		.footer-widgets-wrapper {
+			&.footer-widget-wrapper2 {
+				display: flex;
+				justify-content: space-between;
+				gap: 30px;
+				padding-top: 40px;
+				@include breakpoint(max-xxl) {
+					padding-top: 30px;
+				}
+				@include breakpoint(max-md){
+					flex-wrap: wrap;
+				}
+			}
+			.footer2-social {
+				max-width: 520px;
+				.emails {
+					font-size: 50px;
+					line-height: 60px;
+					font-weight: 700;
+					color: $black;
+					margin-bottom: 30px;
+					display: block;
+					letter-spacing: -3px;
+				}
+			}
+			.footer2-form {
+				max-width: 476px;
+			}
+			.adjust-lin {
+				width: 1px;
+				height: 226px;
+				background: $border-color;
+			}
+			@include breakpoint(max-xl) {
+				.footer2-form {
+					max-width: 476px;
+					padding-bottom: 20px;
+				}
+				.footer2-social {
+					.emails {
+						font-size: 28px;
+						line-height: 38px;
+						margin-bottom: 18px;
+						letter-spacing: -1px;
+					}
+				}
+			}
+			@include breakpoint(max-lg) {
+				.social-adjustment {
+					gap: 24px;
+				}
+			}
+			@include breakpoint(max-md) {
+				.social-adjustment {
+					padding-bottom: 30px;
+					.footer2-form {
+						padding-bottom: 00px;
+					}
+					gap: 24px;
+					flex-wrap: wrap;
+				}
+				.adjust-lin {
+					display: none;
+				}
+			}
+			@include breakpoint(max-sm) {
+				.footer2-social {
+					.emails {
+						font-size: 20px;
+						line-height: 30px;
+						margin-bottom: 16px;
+						letter-spacing: -1px;
+					}
+				}
+			}
+		}
+		.footer2-ele-top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		.footer2-ele-bottom {
+			position: absolute;
+			bottom: 0;
+			right: 0;
 			z-index: -1;
 		}
 	}
@@ -41,20 +131,20 @@
 						}
 					}
 				}
-				&:hover{
-					a{
+				&:hover {
+					a {
 						color: $p1-clr !important;
 					}
 				}
 			}
 		}
-		.list-linkes{
-			li{
-				a{
+		.list-linkes {
+			li {
+				a {
 					color: $pra !important;
-					&:hover{
+					&:hover {
 						color: $p1-clr !important;
-						i{
+						i {
 							color: $p1-clr !important;
 							transform: rotate(90deg);
 						}
@@ -80,7 +170,7 @@
 	}
 }
 
-//Common Social 
+//Common Social
 .social-wrapper {
 	a {
 		width: 40px;
@@ -91,11 +181,11 @@
 		}
 		&:hover {
 			background: $p1-clr !important;
-			i{
+			i {
 				color: $white;
 			}
-			svg{
-				path{
+			svg {
+				path {
 					stroke: $white;
 				}
 			}
@@ -149,7 +239,7 @@
 		background: transparent;
 		border: unset;
 	}
-	.common-btn{
+	.common-btn {
 		padding: 10px 30px !important;
 	}
 	@include breakpoint(max-xl) {
@@ -158,12 +248,12 @@
 			padding: 10px 14px;
 		}
 	}
-	&.style1{
-		input{
+	&.style1 {
+		input {
 			font-size: 14px;
 			color: $pra;
 		}
-		::placeholder{
+		::placeholder {
 			color: $pra;
 		}
 	}
