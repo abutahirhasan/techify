@@ -33,6 +33,19 @@
 			border-bottom: 5px solid $p1-clr;
 		}
 	}
+	&.style4{
+		.content{
+			border-top: unset !important;
+			border: 1px solid $black;
+			transition: all 0.4s;
+		}
+		&:hover{
+			background: $white;
+			.content{
+				background: $white !important;
+			}
+		}
+	}
 }
 .blog-arrow1 {
 	&:hover {

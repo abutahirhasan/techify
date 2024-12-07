@@ -163,7 +163,7 @@
 				flex-wrap: wrap;
 				gap: 20px;
 				justify-content: center;
-				.content{
+				.content {
 					text-align: center;
 				}
 				.footer-ingredient-inner {
@@ -179,7 +179,7 @@
 				flex-wrap: wrap;
 				gap: 20px;
 				justify-content: center;
-				.content{
+				.content {
 					text-align: center;
 				}
 				.footer-ingredient-inner {
@@ -189,6 +189,47 @@
 				.form-cmn-style {
 					width: initial;
 					width: 100%;
+				}
+			}
+		}
+	}
+	&.style4 {
+		.footer-bottom {
+			border-top: 1px solid $black;
+		}
+		.footer-can-help {
+			border-bottom: 1px solid $black;
+			.can-help-info {
+				display: flex;
+				align-items: center;
+				gap: 60px;
+			}
+		}
+		.form-cmn-style {
+			border: 1px solid $black;
+			max-width: 310px;
+			input {
+				color: $black;
+			}
+		}
+		.social-wrapper {
+			a {
+				background: rgb(0, 0, 0, 0.05) !important;
+				&:hover {
+					background: $p1-clr !important;
+				}
+			}
+		}
+		@include breakpoint(max-lg) {
+			.footer-can-help {
+				text-align: center;
+				.can-help-info {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					gap: 9px 24px;
+					text-align: center;
+					justify-content: center;
 				}
 			}
 		}
