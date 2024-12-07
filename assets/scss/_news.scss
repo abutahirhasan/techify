@@ -55,6 +55,27 @@
 }
 //Blog Nesw2
 
+//Blog News3
+.blog-items3{
+	padding: 30px;
+	border: 1px solid $white;
+	transition: all 0.4s;
+	&:hover{
+		.common-btn{
+			background: $black;
+			color: $white !important;
+			i{
+				color: $white;
+			}
+		}
+		border-color: $p3-clr;
+	}
+	@include breakpoint(max-md){
+		padding: 22px;
+	}
+}
+//Blog News3
+
 //Blog Details------------------------------------not use this code
 .blog-details-left {
 	.blog-items2 {

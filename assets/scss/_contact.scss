@@ -2,14 +2,51 @@
 .getin-wrappper {
 	border: 1px solid $black;
 	gap: 38px;
-	@include breakpoint(max-xxl){
+	&.style3 {
+		background: $cmnbg;
+		justify-content: space-between;
+		.thumb-getin {
+			max-width: 600px;
+		}
+		form {
+			input,
+			textarea {
+				background: $white;
+				border: unset;
+				font-size: 18px;
+			}
+			.nice-select {
+				background: $white;
+				border: unset !important;
+				.current {
+					font-size: 18px;
+				}
+			}
+		}
+		@include breakpoint(max-xl) {
+			.thumb-getin {
+				max-width: 500px;
+			}
+		}
+		@include breakpoint(max-md) {
+			.get-inform{
+				max-width: 100%;
+				width: 100%;
+				padding: 10px 10px 10px !important;
+			}
+			.thumb-getin {
+				max-width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
 		gap: 10px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		gap: 10px;
 		flex-wrap: wrap;
 
-		.thumb-getin{
+		.thumb-getin {
 			width: 100%;
 		}
 	}
@@ -77,14 +114,19 @@
 			border-right: 1px solid $black;
 		}
 	}
-	@include breakpoint(max-xl){
+	.common-btn {
+		&:hover {
+			background: $black !important;
+		}
+	}
+	@include breakpoint(max-xl) {
 		padding: 16px 0 16px 30px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 20px 20px 30px 20px;
 	}
-	@include breakpoint(max-sm){
-		h3{
+	@include breakpoint(max-sm) {
+		h3 {
 			font-size: 34px;
 			line-height: 44px;
 		}

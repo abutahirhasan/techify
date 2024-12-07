@@ -1,4 +1,35 @@
 //Pricing
+.pricing-section {
+	&.style3 {
+		.pricing-items {
+			overflow: hidden;
+			h3 {
+				padding: 26px 0;
+				text-align: center;
+				transition: all 0.4s;
+			}
+			.boxes {
+				padding: 30px 40px 40px;
+			}
+			&.active,
+			&:hover {
+				background: $white;
+				h3 {
+					background: $p2-clr !important;
+					color: $white !important;
+				}
+				.common-btn {
+					background: $p2-clr !important;
+				}
+			}
+			@include breakpoint(max-xl){
+				.boxes{
+					padding: 24px 20px 30px;
+				}
+			}
+		}
+	}
+}
 .pricing-items {
 	padding: 30px 30px;
 	h2 {
@@ -27,17 +58,17 @@
 		&:hover {
 			background: linear-gradient(
 				180deg,
-				#FB421F 0%,
+				#fb421f 0%,
 				rgba(255, 220, 38, 0) 100%
 			);
-			h2{
+			h2 {
 				border-bottom: 1px solid rgba(34, 34, 32, 0.288) !important;
-				span{
+				span {
 					color: $black;
 				}
 			}
-			.price-list{
-				li{
+			.price-list {
+				li {
 					color: $black;
 				}
 			}
@@ -73,6 +104,17 @@
 			}
 			@include breakpoint(max-xxl) {
 				padding: 10px 28px;
+			}
+		}
+	}
+	&.style3 {
+		.nav-item {
+			.nav-link {
+				&.active {
+					background: $p3-clr;
+					color: $white;
+					border-radius: 0;
+				}
 			}
 		}
 	}

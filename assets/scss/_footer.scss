@@ -22,7 +22,7 @@
 				@include breakpoint(max-xxl) {
 					padding-top: 30px;
 				}
-				@include breakpoint(max-md){
+				@include breakpoint(max-md) {
 					flex-wrap: wrap;
 				}
 			}
@@ -100,6 +100,97 @@
 			bottom: 0;
 			right: 0;
 			z-index: -1;
+		}
+	}
+	&.style3 {
+		.footer-widgets-wrapper {
+			.list-linkes {
+				li {
+					a {
+						color: $white !important;
+					}
+				}
+			}
+			.list-area {
+				.icon {
+					background: #121212 !important;
+					i {
+						color: $p5-clr;
+					}
+				}
+			}
+		}
+		.footer-ingredient-form {
+			background: $p5-clr;
+			padding: 60px 80px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.footer-ingredient-inner {
+				max-width: 617px;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			.form-cmn-style {
+				width: 517px;
+				background: rgb(0, 0, 0, 0.1);
+				border: unset;
+				input {
+					background: transparent;
+					border: unset;
+					color: $black;
+					&::placeholder {
+						color: $black;
+					}
+				}
+			}
+			@include breakpoint(max-xxl) {
+				padding: 40px 40px;
+			}
+			@include breakpoint(max-xl) {
+				padding: 40px 40px;
+				.footer-ingredient-inner {
+					max-width: 617px;
+					gap: 10px;
+				}
+				.form-cmn-style {
+					width: 317px;
+				}
+			}
+			@include breakpoint(max-lg) {
+				padding: 40px 40px;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+				.content{
+					text-align: center;
+				}
+				.footer-ingredient-inner {
+					max-width: 617px;
+					gap: 10px;
+				}
+				.form-cmn-style {
+					width: 317px;
+				}
+			}
+			@include breakpoint(max-sm) {
+				padding: 40px 20px;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+				.content{
+					text-align: center;
+				}
+				.footer-ingredient-inner {
+					max-width: 617px;
+					gap: 10px;
+				}
+				.form-cmn-style {
+					width: initial;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -188,6 +279,21 @@
 				path {
 					stroke: $white;
 				}
+			}
+		}
+	}
+}
+//Light
+.social-wrapper-light {
+	a {
+		background: #121212 !important;
+		i {
+			color: $white;
+		}
+		svg {
+			path {
+				stroke: $white;
+				fill: $white;
 			}
 		}
 	}

@@ -132,7 +132,7 @@
 					}
 				}
 			}
-			&.active{
+			&.active {
 				border-radius: 10px !important;
 			}
 		}
@@ -165,6 +165,54 @@
 				padding: 0 0;
 				p {
 					color: rgb(255, 255, 255, 0.7);
+				}
+			}
+		}
+	}
+	&.accordion-style3 {
+		.accordion-item {
+			border: 1px solid $black;
+			background: transparent !important;
+			.accordion-header {
+				.accordion-button {
+					background: transparent !important;
+					font-size: 26px;
+					&::before{
+						font-size: 16px;
+					}
+				}
+				.accordion-button:not(.collapsed) {
+					&::before {
+						content: "\f068";
+						background: rgb(39, 218, 183, 0.1);
+						color: $white;
+						font-size: 18px;
+					}
+				}
+				@include breakpoint(max-lg){
+					.accordion-button{
+						font-size: 20px;
+					}
+				}
+				@include breakpoint(max-sm){
+					.accordion-button{
+						font-size: 17px;
+						font-weight: 500;
+						line-height: 20px;
+					}
+				}
+			}
+			p {
+				max-width: unset;
+			}
+			&.active {
+				background: $p2-clr !important;
+				border-color: $p2-clr !important;
+				border-radius: 10px !important;
+				p,
+				h2,
+				button {
+					color: $white !important;
 				}
 			}
 		}

@@ -146,34 +146,173 @@
 }
 
 //Testimonial Items2
-.testimonial-item2{
+.testimonial-item2 {
 	padding: 60px 60px;
-	p{
+	p {
 		font-size: 30px;
 		line-height: 40px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 40px 34px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		padding: 34px 20px;
 	}
-	@include breakpoint(max-xs){
+	@include breakpoint(max-xs) {
 		padding: 30px 18px;
 	}
-	@include breakpoint(max-xl){
-		p{
+	@include breakpoint(max-xl) {
+		p {
 			font-size: 22px;
 			line-height: 32px;
 		}
 	}
-	@include breakpoint(max-lg){
-		p{
+	@include breakpoint(max-lg) {
+		p {
 			font-size: 18px;
 			line-height: 28px;
 		}
-		.quote2{
+		.quote2 {
 			width: 40px;
+		}
+	}
+}
+
+//Testimonial Style3
+.testimonial-wrapper3 {
+	.testimonial-inner3 {
+		display: flex;
+		gap: 36px;
+	}
+	.boxes-area {
+		max-width: 999px;
+		margin: 0 auto;
+		p {
+			font-size: 28px;
+			line-height: 38px;
+		}
+	}
+	.thumb {
+		max-width: 208px;
+		min-width: 208px;
+		border-radius: 16px;
+		img {
+			width: 100%;
+			border-radius: 16px;
+		}
+	}
+	.quote2 {
+		width: 50px;
+	}
+	.cont {
+		margin-bottom: 46px;
+		h3 {
+			font-size: 50px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		.testimonial-inner3 {
+			display: flex;
+			gap: 14px 24px;
+		}
+		.boxes-area {
+			p {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+		.cont {
+			margin-bottom: 25px;
+			h3 {
+				font-size: 36px;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.testimonial-inner3 {
+			display: flex;
+			gap: 14px 24px;
+		}
+		.thumb {
+			max-width: 150px;
+			min-width: 150px;
+			img {
+				width: 100%;
+			}
+		}
+		.boxes-area {
+			p {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+		.cont {
+			margin-bottom: 25px;
+			h3 {
+				font-size: 36px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.testimonial-inner3 {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px 24px;
+		}
+		.thumb {
+			max-width: 150px;
+			min-width: 150px;
+			img {
+				width: 100%;
+			}
+		}
+		.boxes-area {
+			p {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+		.cont {
+			margin-bottom: 25px;
+			h3 {
+				font-size: 36px;
+			}
+		}
+	}
+	.array-button {
+		bottom: 145px;
+		justify-content: space-between;
+		.array-prev {
+			position: absolute;
+			left: 45px;
+			bottom: 150px;
+		}
+		.array-next {
+			position: absolute;
+			right: 45px;
+			bottom: 150px;
+		}
+		@include breakpoint(max-xxl) {
+			.array-prev {
+				left: 25px;
+				bottom: 150px;
+			}
+			.array-next {
+				right: 25px;
+				bottom: 150px;
+			}
+		}
+		@include breakpoint(max-xl) {
+			justify-content: center;
+			margin-top: 25px;
+			.array-prev {
+				position: initial;
+				left: 25px;
+			}
+			.array-next {
+				position: initial;
+				right: 25px;
+			}
 		}
 	}
 }
