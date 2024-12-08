@@ -347,3 +347,31 @@
 	}
 }
 //Business Section
+
+//Project Gallery
+.project-gallery-wrap{
+	margin-right: -300px;
+	@include breakpoint(max-md){
+		margin-right: 0;
+	}
+}
+.project-gallery-item{
+	overflow: hidden;
+	.content{
+		position: absolute;
+		bottom: -300px;
+		left: 10px;
+		width: 90%;
+		background: $p5-clr;
+		border-radius: 16px;
+		padding: 14px 18px;
+		z-index: 1;
+		transition: all 0.4s;
+	}
+	&:hover{
+		.content{
+			bottom: 14px;
+		}
+	}
+}
+//Project Gallery

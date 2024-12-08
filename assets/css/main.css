@@ -1997,6 +1997,33 @@ footer {
   }
 }
 
+.project-gallery-wrap {
+  margin-right: -300px;
+}
+@media (max-width: 767px) {
+  .project-gallery-wrap {
+    margin-right: 0;
+  }
+}
+
+.project-gallery-item {
+  overflow: hidden;
+}
+.project-gallery-item .content {
+  position: absolute;
+  bottom: -300px;
+  left: 10px;
+  width: 90%;
+  background: var(--p5-clr);
+  border-radius: 16px;
+  padding: 14px 18px;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.project-gallery-item:hover .content {
+  bottom: 14px;
+}
+
 .custom-accordion {
   display: grid;
   gap: 30px;

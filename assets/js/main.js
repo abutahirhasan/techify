@@ -296,6 +296,31 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//--Project Gallery Slide
+		const projectGalleryWrap = new Swiper(".project-gallery-wrap", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//--Testimonial Slide
 		const teamWrapper2 = new Swiper(".team-wrapper2", {
 			spaceBetween: 24,
