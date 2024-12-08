@@ -119,6 +119,39 @@
 			background: $black !important;
 		}
 	}
+	&.style4{
+		border-radius: 20px !important;
+		width: 100%;
+		padding: 40px 40px;
+		.nice-select,
+		textarea,
+		input{
+			border: 1px solid $white !important;
+			background: transparent;
+			font-size: 16px;
+			color: $white;
+			&::placeholder{
+				color: $white;
+			}
+		}
+		.nice-select{
+			.current{
+				font-size: 16px;
+				color: $white !important;
+			}
+			&::after{
+				border-color: $white;
+			}
+			.list{
+				li{
+					color: $black;
+				}
+			}
+		}
+		@include breakpoint(max-lg){
+			padding: 24px 24px;
+		}
+	}
 	@include breakpoint(max-xl) {
 		padding: 16px 0 16px 30px;
 	}
@@ -187,3 +220,16 @@
 	}
 }
 //Map area
+
+//Contact 04
+.contact-content4{
+	border: 1px solid $black;
+	border-radius: 20px;
+	padding: 40px 36px;
+	.co-title{
+		border-bottom: 1px solid $black;
+	}
+	@include breakpoint(max-md){
+		padding: 24px 24px;
+	}
+}

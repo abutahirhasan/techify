@@ -1531,6 +1531,39 @@ footer {
 .get-inform .common-btn:hover {
   background: var(--black) !important;
 }
+.get-inform.style4 {
+  border-radius: 20px !important;
+  width: 100%;
+  padding: 40px 40px;
+}
+.get-inform.style4 .nice-select,
+.get-inform.style4 textarea,
+.get-inform.style4 input {
+  border: 1px solid var(--white) !important;
+  background: transparent;
+  font-size: 16px;
+  color: var(--white);
+}
+.get-inform.style4 .nice-select::placeholder,
+.get-inform.style4 textarea::placeholder,
+.get-inform.style4 input::placeholder {
+  color: var(--white);
+}
+.get-inform.style4 .nice-select .current {
+  font-size: 16px;
+  color: var(--white) !important;
+}
+.get-inform.style4 .nice-select::after {
+  border-color: var(--white);
+}
+.get-inform.style4 .nice-select .list li {
+  color: var(--black);
+}
+@media (max-width: 991px) {
+  .get-inform.style4 {
+    padding: 24px 24px;
+  }
+}
 @media (max-width: 1199px) {
   .get-inform {
     padding: 16px 0 16px 30px;
@@ -1595,6 +1628,20 @@ footer {
 @media (max-width: 1600px) {
   .map-area iframe {
     height: 400px;
+  }
+}
+
+.contact-content4 {
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  padding: 40px 36px;
+}
+.contact-content4 .co-title {
+  border-bottom: 1px solid var(--black);
+}
+@media (max-width: 767px) {
+  .contact-content4 {
+    padding: 24px 24px;
   }
 }
 
