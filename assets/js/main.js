@@ -346,6 +346,63 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
+		//--Testimonial Slide
+		const teamWrapper4 = new Swiper(".team-wrapper4", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 3,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
+		//--Testimonial Slide
+		const providingTestimonialSlide = new Swiper(
+			".providing-testimonial-slide",
+			{
+				spaceBetween: 44,
+				speed: 500,
+				loop: true,
+				pagination: {
+					el: ".dot",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".array-prev",
+					prevEl: ".array-next",
+				},
+				breakpoints: {
+					1199: {
+						slidesPerView: 1,
+					},
+					767: {
+						slidesPerView: 1,
+					},
+					575: {
+						slidesPerView: 1,
+					},
+					0: {
+						slidesPerView: 1,
+					},
+				},
+			}
+		);
+
 		//Not Use this code bottom ----------------+++++==
 		//--Text Custom Slide
 		const sponsor__text__slide = new Swiper(".sponsor-text-slide", {
@@ -372,6 +429,7 @@ CSS TABLE OF CONTENTS
 				},
 			},
 		});
+
 		//--Testimonial Slide
 		const testimonialSlider = new Swiper(".testimonial-slider", {
 			spaceBetween: 30,

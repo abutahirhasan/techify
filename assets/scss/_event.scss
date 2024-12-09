@@ -375,3 +375,80 @@
 	}
 }
 //Project Gallery
+
+//Providing Items
+.providing-items{
+	.author{
+		margin: 0 auto 30px;
+	}
+}
+.smart-connecting{
+	padding: 40px 40px;
+	@include breakpoint(max-xl){
+		padding: 24px 24px;
+	}
+	.rising-shape{
+		position: absolute;
+		right: 0;
+		top: 0;
+		max-width: 408px;
+	}
+}
+.providing-boxes{
+	padding: 40px 30px;
+	@include breakpoint(max-xl){
+		padding: 30px 22px;
+	}
+}
+.providing-testimonial-slide{
+	padding: 40px 40px;
+	.swiper-wrapper{
+		max-width: 550px;
+		margin: 0 auto;
+	}
+	.array-button{
+		justify-content: space-between;
+		width: 87%;
+		position: absolute;
+		top: 30%;
+		z-index: 9;
+		button{
+			background: #1A1705;
+			i{
+				color: $p5-clr;
+			}
+			&.active,
+			&:hover{
+				background: $p5-clr;
+				i{
+					color: $black !important;
+				}
+			}
+			@include breakpoint(max-lg){
+				width: 45px;
+				height: 45px;
+				min-width: 45px;
+			}
+		}
+		@include breakpoint(max-lg){
+			width: 80%;
+		}
+	}
+	p{
+		font-size: 24px;
+	}
+	@include breakpoint(max-xxl){
+		p{
+			font-size: 20px;
+		}
+	}
+	@include breakpoint(max-xl){
+		p{
+			font-size: 17px;
+		}
+	}
+	@include breakpoint(max-xs){
+		padding: 30px 22px;
+	}
+}
+//Providing Items

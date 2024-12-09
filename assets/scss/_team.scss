@@ -3,13 +3,13 @@
 	border-radius: 20px;
 	padding: 30px;
 	border: 1px solid #e3e3e3;
-	&.style2{
+	&.style2 {
 		border-radius: 999px;
 		overflow: hidden;
-		.thumb{
+		.thumb {
 			// margin-bottom: -30px;
 			height: 361px;
-			img{
+			img {
 				height: 100%;
 				object-fit: contain;
 			}
@@ -70,7 +70,7 @@
 	@include breakpoint(max-md) {
 		gap: 16px;
 		flex-wrap: wrap;
-        justify-content: center;
+		justify-content: center;
 		.tv-items {
 			max-width: 120px;
 			img {
@@ -86,54 +86,76 @@
 		opacity: 4%;
 	}
 }
-.it-items{
-    .arrow{
-        width: 70px;
-        height: 70px;
-        min-width: 70px;
-        position: absolute;
-        transition: all 0.4s;
-        transform: scale(0);
-        &:hover{
-            background: $p1-clr;
-        }
-        @include breakpoint(max-xl){
-            width: 55px;
-            height: 55px;
-            min-width: 55px;
-            svg{
-                width: 18px;
-                height: 18px;
-            }
-        }
-    }
-    &::before{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background: rgba(8, 8, 8, 0.336);
-        border-radius: 20px;
-        transition: all 0.4s;
-    }
-    &:hover{
-        &::before{
-            width: 100%;
-        }
-        .arrow{
-            transform: scale(1);
-        }
-    }
+.it-items {
+	.arrow {
+		width: 70px;
+		height: 70px;
+		min-width: 70px;
+		position: absolute;
+		transition: all 0.4s;
+		transform: scale(0);
+		&:hover {
+			background: $p1-clr;
+		}
+		@include breakpoint(max-xl) {
+			width: 55px;
+			height: 55px;
+			min-width: 55px;
+			svg {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background: rgba(8, 8, 8, 0.336);
+		border-radius: 20px;
+		transition: all 0.4s;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+		.arrow {
+			transform: scale(1);
+		}
+	}
 }
 
-
 //Team 2
-.team-wrapper2{
-	.space-top{
-		@include breakpoint(max-lg){
+.team-wrapper2 {
+	.space-top {
+		@include breakpoint(max-lg) {
 			padding-top: 0;
+		}
+	}
+}
+
+//Team 04
+.team-items4 {
+	border-radius: 20px 20px 20px 20px !important;
+	transition: all 0.4s;
+	.thumb {
+		padding: 4px 10px 0;
+		background: $white;
+		transition: all 0.4s;
+	}
+	.cont {
+		background: $white;
+		transition: all 0.4s;
+	}
+	&:hover {
+		.thumb {
+			background: $p3-clr;
+		}
+		.cont {
+			background: $p3-clr;
 		}
 	}
 }
