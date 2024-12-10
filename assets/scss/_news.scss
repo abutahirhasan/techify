@@ -26,22 +26,22 @@
 			}
 		}
 	}
-	&.style2{
+	&.style2 {
 		border-bottom: 5px solid $white;
 		transition: all 0.4s;
-		&:hover{
+		&:hover {
 			border-bottom: 5px solid $p1-clr;
 		}
 	}
-	&.style4{
-		.content{
+	&.style4 {
+		.content {
 			border-top: unset !important;
 			border: 1px solid $black;
 			transition: all 0.4s;
 		}
-		&:hover{
+		&:hover {
 			background: $white;
-			.content{
+			.content {
 				background: $white !important;
 			}
 		}
@@ -49,17 +49,17 @@
 }
 .blog-arrow1 {
 	&:hover {
-		span{
+		span {
 			color: $p1-clr !important;
 		}
 		.arrows {
 			transform: rotate(30deg) !important;
 			background: $p1-clr !important;
-			i{
+			i {
 				color: $white !important;
 			}
-			svg{
-				path{
+			svg {
+				path {
 					stroke: $white;
 				}
 			}
@@ -69,25 +69,36 @@
 //Blog Nesw2
 
 //Blog News3
-.blog-items3{
+.blog-items3 {
 	padding: 30px;
 	border: 1px solid $white;
 	transition: all 0.4s;
-	&:hover{
-		.common-btn{
+	&:hover {
+		.common-btn {
 			background: $black;
 			color: $white !important;
-			i{
+			i {
 				color: $white;
 			}
 		}
 		border-color: $p3-clr;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 22px;
 	}
 }
 //Blog News3
+
+//Blog News4
+.fixed-bg4 {
+	background: linear-gradient(
+		199deg,
+		rgba(255, 220, 38, 0.02) 22.03%,
+		rgba(255, 144, 231, 0.2) 60.44%,
+		rgba(62, 137, 255, 0.4) 99.27%
+	);
+}
+//Blog News4
 
 //Blog Details------------------------------------not use this code
 .blog-details-left {

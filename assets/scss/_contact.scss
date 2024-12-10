@@ -29,7 +29,7 @@
 			}
 		}
 		@include breakpoint(max-md) {
-			.get-inform{
+			.get-inform {
 				max-width: 100%;
 				width: 100%;
 				padding: 10px 10px 10px !important;
@@ -119,37 +119,45 @@
 			background: $black !important;
 		}
 	}
-	&.style4{
+	&.style4 {
 		border-radius: 20px !important;
 		width: 100%;
 		padding: 40px 40px;
 		.nice-select,
 		textarea,
-		input{
+		input {
 			border: 1px solid $white !important;
 			background: transparent;
 			font-size: 16px;
 			color: $white;
-			&::placeholder{
+			&::placeholder {
 				color: $white;
 			}
 		}
-		.nice-select{
-			.current{
+		.nice-select {
+			.current {
 				font-size: 16px;
 				color: $white !important;
 			}
-			&::after{
+			&::after {
 				border-color: $white;
 			}
-			.list{
-				li{
+			.list {
+				li {
 					color: $black;
 				}
 			}
 		}
-		@include breakpoint(max-lg){
+		@include breakpoint(max-lg) {
 			padding: 24px 24px;
+		}
+	}
+	&.get-inform-black {
+		border: 2px solid $p5-clr;
+		textarea,
+		input {
+			border: 1px solid rgb(255, 255, 255, 0.35) !important;
+			font-size: 14px;
 		}
 	}
 	@include breakpoint(max-xl) {
@@ -222,14 +230,14 @@
 //Map area
 
 //Contact 04
-.contact-content4{
+.contact-content4 {
 	border: 1px solid $black;
 	border-radius: 20px;
 	padding: 40px 36px;
-	.co-title{
+	.co-title {
 		border-bottom: 1px solid $black;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 24px 24px;
 	}
 }

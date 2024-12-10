@@ -314,3 +314,17 @@
 }
 //Tech Pro Style
 
+//Hosting Ex
+.hosting-exprience-wrap{
+	padding: 60px 20px;
+	.section-title{
+		max-width: 1055px;
+		margin: 0 auto;
+		.common-btn{
+			background: rgba(0, 0, 0, 0.10);
+		}
+	}
+	@include breakpoint(max-lg){
+		padding: 40px 20px;
+	}
+}

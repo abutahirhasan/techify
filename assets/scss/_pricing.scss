@@ -22,8 +22,8 @@
 					background: $p2-clr !important;
 				}
 			}
-			@include breakpoint(max-xl){
-				.boxes{
+			@include breakpoint(max-xl) {
+				.boxes {
 					padding: 24px 20px 30px;
 				}
 			}
@@ -77,6 +77,48 @@
 				color: $white !important;
 				i {
 					color: $white !important;
+				}
+			}
+		}
+	}
+	&.style5 {
+		transition: all 0.4s;
+		h2 {
+			color: $white;
+			span {
+				color: $white;
+			}
+		}
+		.price-list {
+			.line {
+				width: 100%;
+				height: 1px;
+				background: rgb(255, 255, 255, 0.2);
+			}
+		}
+		.common-btn {
+			background: #121212;
+			border: 1px solid $p5-clr !important;
+		}
+		&.active,
+		&:hover {
+			background: $p5-clr;
+			h3,
+			h2 {
+				color: $black !important;
+				span {
+					color: $black !important;
+				}
+			}
+			.price-list {
+				i,
+				li{
+					color: $black !important;
+				}
+				.line {
+					width: 100%;
+					height: 1px;
+					background: rgba(63, 59, 59, 0.2);
 				}
 			}
 		}

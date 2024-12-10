@@ -177,7 +177,7 @@
 				.accordion-button {
 					background: transparent !important;
 					font-size: 26px;
-					&::before{
+					&::before {
 						font-size: 16px;
 					}
 				}
@@ -189,13 +189,13 @@
 						font-size: 18px;
 					}
 				}
-				@include breakpoint(max-lg){
-					.accordion-button{
+				@include breakpoint(max-lg) {
+					.accordion-button {
 						font-size: 20px;
 					}
 				}
-				@include breakpoint(max-sm){
-					.accordion-button{
+				@include breakpoint(max-sm) {
+					.accordion-button {
 						font-size: 17px;
 						font-weight: 500;
 						line-height: 20px;
@@ -219,3 +219,70 @@
 	}
 }
 //Faq Section
+
+//Faq Section05
+.faq-section5 {
+	.section-title {
+		max-width: 934px;
+		margin: 0 auto;
+	}
+}
+.accordion-style5 {
+	.accordion-item {
+		box-shadow: unset;
+		background: transparent !important;
+		padding: 0;
+		.accordion-header {
+			.accordion-button {
+				color: $white;
+				font-size: 22px;
+				background: transparent !important;
+				border-radius: 0;
+				&::after {
+					display: none;
+				}
+				&::before {
+					position: absolute;
+					right: 7px;
+					content: "";
+					width: 40px;
+					height: 40px;
+					min-width: 40px;
+					background:transparent;
+					background: url(../../assets/img/icon/arrow-right-white.png)
+						no-repeat center center;
+					background-size: 30px contain;
+					transition: all 0.4s;
+				}
+			}
+			.accordion-button:not(.collapsed) {
+				&::before {
+					content: "";
+					background: transparent;
+					color: $white;
+					font-size: 18px;
+					background: url(../../assets/img/icon/arrow-right-white.png)
+						no-repeat center center;
+					background-size: 30px contain;
+					transform: rotate(90deg);
+				}
+			}
+		}
+		.accordion-body {
+			p {
+				max-width: 100%;
+			}
+		}
+		&.active {
+			p,
+			h2,
+			button {
+				color: $white !important;
+			}
+		}
+	}
+	.line {
+		background: rgb(255, 255, 255, 0.2);
+	}
+}
+//Faq Section05

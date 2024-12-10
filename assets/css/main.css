@@ -30,6 +30,7 @@ Version: 1.0.0
   --pra2: #DDD;
   --text: #666666;
   --cmnwhite: #CBCBCC;
+  --star: #FFA336;
   --theme2: #70A6B1;
   --header: #090A0B;
   --text-2: #ffffffcc;
@@ -108,6 +109,12 @@ Version: 1.0.0
   background-color: var(--p1-clr);
   transition: all 0.7s ease;
   z-index: -1;
+}
+.box-style.p1-hover::before {
+  background: var(--p2-clr);
+}
+.box-style.p1-hover:hover {
+  color: var(--white) !important;
 }
 .box-style.btn1::before {
   background: var(--black);
@@ -565,6 +572,10 @@ footer {
 
 .cmn-bg {
   background: var(--cmnbg) !important;
+}
+
+.star-clr {
+  color: var(--star);
 }
 
 .white-clr {
@@ -1414,6 +1425,14 @@ footer {
   object-fit: contain;
 }
 
+.sponsor-version5 {
+  background: #27DAB7;
+  padding: 24px 0;
+}
+.sponsor-version5 .sponsor-items1 img {
+  filter: brightness(0);
+}
+
 .getin-wrappper {
   border: 1px solid var(--black);
   gap: 38px;
@@ -1569,6 +1588,14 @@ footer {
   .get-inform.style4 {
     padding: 24px 24px;
   }
+}
+.get-inform.get-inform-black {
+  border: 2px solid var(--p5-clr);
+}
+.get-inform.get-inform-black textarea,
+.get-inform.get-inform-black input {
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  font-size: 14px;
 }
 @media (max-width: 1199px) {
   .get-inform {
@@ -2359,6 +2386,58 @@ footer {
 .custom-accordion.accordion-style3 .accordion-item.active h2,
 .custom-accordion.accordion-style3 .accordion-item.active button {
   color: var(--white) !important;
+}
+
+.faq-section5 .section-title {
+  max-width: 934px;
+  margin: 0 auto;
+}
+
+.accordion-style5 .accordion-item {
+  box-shadow: unset;
+  background: transparent !important;
+  padding: 0;
+}
+.accordion-style5 .accordion-item .accordion-header .accordion-button {
+  color: var(--white);
+  font-size: 22px;
+  background: transparent !important;
+  border-radius: 0;
+}
+.accordion-style5 .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.accordion-style5 .accordion-item .accordion-header .accordion-button::before {
+  position: absolute;
+  right: 7px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: transparent;
+  background: url(../../assets/img/icon/arrow-right-white.png) no-repeat center center;
+  background-size: 30px contain;
+  transition: all 0.4s;
+}
+.accordion-style5 .accordion-item .accordion-header .accordion-button:not(.collapsed)::before {
+  content: "";
+  background: transparent;
+  color: var(--white);
+  font-size: 18px;
+  background: url(../../assets/img/icon/arrow-right-white.png) no-repeat center center;
+  background-size: 30px contain;
+  transform: rotate(90deg);
+}
+.accordion-style5 .accordion-item .accordion-body p {
+  max-width: 100%;
+}
+.accordion-style5 .accordion-item.active p,
+.accordion-style5 .accordion-item.active h2,
+.accordion-style5 .accordion-item.active button {
+  color: var(--white) !important;
+}
+.accordion-style5 .line {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .accordion-item {
@@ -5211,6 +5290,10 @@ footer {
   }
 }
 
+.fixed-bg4 {
+  background: linear-gradient(199deg, rgba(255, 220, 38, 0.02) 22.03%, rgba(255, 144, 231, 0.2) 60.44%, rgba(62, 137, 255, 0.4) 99.27%);
+}
+
 .blog-details-left {
   display: grid;
   gap: 40px;
@@ -5895,6 +5978,47 @@ input.main-search-input::placeholder {
 .pricing-items.style2.active .common-btn i, .pricing-items.style2:hover .common-btn i {
   color: var(--white) !important;
 }
+.pricing-items.style5 {
+  transition: all 0.4s;
+}
+.pricing-items.style5 h2 {
+  color: var(--white);
+}
+.pricing-items.style5 h2 span {
+  color: var(--white);
+}
+.pricing-items.style5 .price-list .line {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.pricing-items.style5 .common-btn {
+  background: #121212;
+  border: 1px solid var(--p5-clr) !important;
+}
+.pricing-items.style5.active, .pricing-items.style5:hover {
+  background: var(--p5-clr);
+}
+.pricing-items.style5.active h3,
+.pricing-items.style5.active h2, .pricing-items.style5:hover h3,
+.pricing-items.style5:hover h2 {
+  color: var(--black) !important;
+}
+.pricing-items.style5.active h3 span,
+.pricing-items.style5.active h2 span, .pricing-items.style5:hover h3 span,
+.pricing-items.style5:hover h2 span {
+  color: var(--black) !important;
+}
+.pricing-items.style5.active .price-list i,
+.pricing-items.style5.active .price-list li, .pricing-items.style5:hover .price-list i,
+.pricing-items.style5:hover .price-list li {
+  color: var(--black) !important;
+}
+.pricing-items.style5.active .price-list .line, .pricing-items.style5:hover .price-list .line {
+  width: 100%;
+  height: 1px;
+  background: rgba(63, 59, 59, 0.2);
+}
 @media (max-width: 1399px) {
   .pricing-items {
     padding: 24px 20px;
@@ -6216,6 +6340,22 @@ input.main-search-input::placeholder {
 @media (max-width: 575px) {
   .last-counting {
     display: grid !important;
+  }
+}
+
+.hosting-exprience-wrap {
+  padding: 60px 20px;
+}
+.hosting-exprience-wrap .section-title {
+  max-width: 1055px;
+  margin: 0 auto;
+}
+.hosting-exprience-wrap .section-title .common-btn {
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991px) {
+  .hosting-exprience-wrap {
+    padding: 40px 20px;
   }
 }
 
@@ -7303,5 +7443,65 @@ input.main-search-input::placeholder {
   .testimonial-wrapper3 .array-button .array-next {
     position: initial;
     right: 25px;
+  }
+}
+
+.testimonial-items5 {
+  padding: 40px 40px;
+}
+.testimonial-items5 .pragraphs {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 38px;
+}
+.testimonial-items5 .naming-area {
+  margin-bottom: 30px;
+}
+.testimonial-items5 .naming-area .danne-author {
+  width: 85px;
+  height: 85px;
+}
+@media (max-width: 575px) {
+  .testimonial-items5 {
+    padding: 30px 26px;
+  }
+  .testimonial-items5 .pragraphs {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .testimonial-items5 .quote5 {
+    margin: 0 auto;
+  }
+  .testimonial-items5 .naming-area {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .testimonial-items5 .naming-area .danne-author {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+  }
+}
+
+.testimonial-big5 {
+  border-radius: 20px;
+  margin-left: -63%;
+}
+.testimonial-big5 img {
+  border-radius: 20px;
+  max-width: unset;
+}
+@media (max-width: 767px) {
+  .testimonial-big5 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .testimonial-big5 img {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
