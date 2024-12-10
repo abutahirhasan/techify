@@ -4643,20 +4643,23 @@ footer {
 }
 @media (max-width: 991px) {
   .banner-section.hero-style4 .hero-content-version4 {
-    padding: 20px 12px 12px 12px;
+    padding: 20px 12px 60px 12px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumbnail-wrapper {
+    align-items: flex-end;
   }
   .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 1138px;
   }
   .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 500;
     letter-spacing: -5px;
-    line-height: 80px;
+    line-height: 70px;
   }
   .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area .circle-area {
     width: 187px;
@@ -4666,6 +4669,73 @@ footer {
   }
   .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area .circle-area .circles {
     animation: cirs 10s linear infinite;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumb {
+    max-width: 400px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumb img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section.hero-style4 .hero-content-version4 {
+    padding: 20px 12px 75px 12px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumbnail-wrapper {
+    align-items: flex-end;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    max-width: 1138px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area h1 {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    line-height: 70px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area .circle-area {
+    display: none;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumb {
+    max-width: 400px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumb img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section.hero-style4 .hero-content-version4 {
+    padding: 20px 12px 75px 12px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumbnail-wrapper {
+    align-items: flex-end;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-thumbnail-wrapper .contenst-inner p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    max-width: 1138px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area h1 {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    line-height: 45px;
+  }
+  .banner-section.hero-style4 .hero-content-version4 .hero4-heading-area .circle-area {
+    display: none;
   }
   .banner-section.hero-style4 .hero-content-version4 .hero4-thumb {
     max-width: 400px;
