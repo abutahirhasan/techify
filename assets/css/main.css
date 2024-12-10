@@ -1746,6 +1746,52 @@ footer {
     padding: 36px 24px;
   }
 }
+.worke-items.style4 {
+  margin-bottom: 0;
+}
+.worke-items.style4 .content-in {
+  border-radius: 0 20px 20px 20px;
+  padding: 28px;
+  background: var(--white);
+  width: 90%;
+  transition: all 0.5s;
+  margin-top: -60px;
+  position: relative;
+  z-index: 1;
+}
+.worke-items.style4 .icons {
+  filter: brightness(0);
+  opacity: 0.5;
+  height: 32px;
+  width: 39px;
+  object-fit: contain;
+}
+.worke-items.style4:hover .content-in {
+  background: var(--p4-clr);
+}
+.worke-items.style4:hover .content-in h3,
+.worke-items.style4:hover .content-in a,
+.worke-items.style4:hover .content-in p,
+.worke-items.style4:hover .content-in i {
+  color: var(--white) !important;
+}
+.worke-items.style4:hover .content-in .icons {
+  filter: brightness(25);
+  opacity: 1;
+}
+@media (max-width: 1199px) {
+  .worke-items.style4 .content-in {
+    padding: 22px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .worke-items.style4 .content-in {
+    margin-top: 10px;
+    width: 100%;
+    padding: 22px 20px;
+    border-radius: 20px 20px 20px 20px;
+  }
+}
 
 .about-exchange-content p {
   font-size: 20px;
@@ -2067,7 +2113,7 @@ footer {
   z-index: 9;
 }
 .providing-testimonial-slide .array-button button {
-  background: #1A1705;
+  background: #1a1705;
 }
 .providing-testimonial-slide .array-button button i {
   color: var(--p5-clr);

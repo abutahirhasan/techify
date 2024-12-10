@@ -80,6 +80,54 @@
 			padding: 36px 24px;
 		}
 	}
+	&.style4 {
+		margin-bottom: 0;
+		.content-in {
+			border-radius: 0 20px 20px 20px;
+			padding: 28px;
+			background: $white;
+			width: 90%;
+			transition: all 0.5s;
+			margin-top: -60px;
+			position: relative;
+			z-index: 1;
+		}
+		.icons {
+			filter: brightness(0);
+			opacity: 0.5;
+			height: 32px;
+			width: 39px;
+			object-fit: contain;
+		}
+		&:hover {
+			.content-in{
+				background: $p4-clr;
+				h3,
+				a,
+				p,
+				i {
+					color: $white !important;
+				}
+				.icons {
+					filter: brightness(25);
+					opacity: 1;
+				}
+			}
+		}
+		@include breakpoint(max-xl){
+			.content-in{
+				padding: 22px 20px;
+			}
+		}
+		@include breakpoint(max-md){
+			.content-in{
+				margin-top: 10px;
+				width: 100%;
+				padding: 22px 20px;
+				border-radius: 20px 20px 20px 20px;
+			}
+		}
+	}
 }
 .about-exchange-content {
 	p {
@@ -349,15 +397,15 @@
 //Business Section
 
 //Project Gallery
-.project-gallery-wrap{
+.project-gallery-wrap {
 	margin-right: -300px;
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		margin-right: 0;
 	}
 }
-.project-gallery-item{
+.project-gallery-item {
 	overflow: hidden;
-	.content{
+	.content {
 		position: absolute;
 		bottom: -300px;
 		left: 10px;
@@ -368,8 +416,8 @@
 		z-index: 1;
 		transition: all 0.4s;
 	}
-	&:hover{
-		.content{
+	&:hover {
+		.content {
 			bottom: 14px;
 		}
 	}
@@ -377,77 +425,77 @@
 //Project Gallery
 
 //Providing Items
-.providing-items{
-	.author{
+.providing-items {
+	.author {
 		margin: 0 auto 30px;
 	}
 }
-.smart-connecting{
+.smart-connecting {
 	padding: 40px 40px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 24px 24px;
 	}
-	.rising-shape{
+	.rising-shape {
 		position: absolute;
 		right: 0;
 		top: 0;
 		max-width: 408px;
 	}
 }
-.providing-boxes{
+.providing-boxes {
 	padding: 40px 30px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 30px 22px;
 	}
 }
-.providing-testimonial-slide{
+.providing-testimonial-slide {
 	padding: 40px 40px;
-	.swiper-wrapper{
+	.swiper-wrapper {
 		max-width: 550px;
 		margin: 0 auto;
 	}
-	.array-button{
+	.array-button {
 		justify-content: space-between;
 		width: 87%;
 		position: absolute;
 		top: 30%;
 		z-index: 9;
-		button{
-			background: #1A1705;
-			i{
+		button {
+			background: #1a1705;
+			i {
 				color: $p5-clr;
 			}
 			&.active,
-			&:hover{
+			&:hover {
 				background: $p5-clr;
-				i{
+				i {
 					color: $black !important;
 				}
 			}
-			@include breakpoint(max-lg){
+			@include breakpoint(max-lg) {
 				width: 45px;
 				height: 45px;
 				min-width: 45px;
 			}
 		}
-		@include breakpoint(max-lg){
+		@include breakpoint(max-lg) {
 			width: 80%;
 		}
 	}
-	p{
+	p {
 		font-size: 24px;
 	}
-	@include breakpoint(max-xxl){
-		p{
+	@include breakpoint(max-xxl) {
+		p {
 			font-size: 20px;
 		}
 	}
-	@include breakpoint(max-xl){
-		p{
+	@include breakpoint(max-xl) {
+		p {
 			font-size: 17px;
 		}
 	}
-	@include breakpoint(max-xs){
+	@include breakpoint(max-xs) {
 		padding: 30px 22px;
 	}
 }
