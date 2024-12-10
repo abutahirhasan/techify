@@ -41,6 +41,7 @@ Version: 1.0.0
   --bg3: #70A6B1;
   --bg4: #E0E4E9;
   --bg5: #0E384C;
+  --bg6: #121212;
   --box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
 
@@ -556,6 +557,10 @@ footer {
 
 .p5-bg {
   background: var(--p5-clr) !important;
+}
+
+.bg6 {
+  background: var(--bg6) !important;
 }
 
 .cmn-bg {
@@ -2879,6 +2884,45 @@ footer {
     gap: 9px 24px;
     text-align: center;
     justify-content: center;
+  }
+}
+.footer-section.footer-style5 .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-section.footer-style5 .footer-content .form-cmn-style {
+  border: 1px solid rgba(227, 227, 227, 0.103);
+  background: #121212;
+}
+.footer-section.footer-style5 .footer-content .form-cmn-style input {
+  color: var(--white);
+}
+.footer-section.footer-style5 .footer-content .form-cmn-style input::placeholder {
+  color: var(--white);
+}
+.footer-section.footer-style5 .logo-big {
+  max-width: 740px;
+  margin: 60px auto;
+  display: block;
+}
+.footer-section.footer-style5 .logo-big img {
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 1399px) {
+  .footer-section.footer-style5 .logo-big {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section.footer-style5 .logo-big {
+    max-width: 400px;
+    margin: 50px auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section.footer-style5 .logo-big {
+    margin: 30px auto;
+    max-width: 250px;
   }
 }
 

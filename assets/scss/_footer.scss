@@ -234,6 +234,43 @@
 			}
 		}
 	}
+	&.footer-style5{
+		.footer-bottom{
+			border-top: 1px solid rgb(255, 255, 255, 0.1);
+		}
+		.footer-content{
+			.form-cmn-style{
+				border: 1px solid rgba(227, 227, 227, 0.103);
+				background: #121212;
+				input{
+					color: $white;
+					&::placeholder{
+						color: $white;
+					}
+				}
+			}
+		}
+		.logo-big{
+			max-width: 740px;
+			margin: 60px auto;
+			display: block;
+			img{
+				width: 100%;
+				object-fit: contain;
+			}
+			@include breakpoint(max-xxl){
+				max-width: 500px;
+			}
+			@include breakpoint(max-md){
+				max-width: 400px;
+				margin: 50px auto;
+			}
+			@include breakpoint(max-md){
+				margin: 30px auto;
+				max-width: 250px;
+			}
+		}
+	}
 }
 
 .footer-widgets-wrapper {
