@@ -57,6 +57,20 @@
 		}
 	}
 }
+.header-top-wrapper5{
+	background: $black;
+	padding-left: 28px !important;
+	padding-right: 28px !important;
+	border-bottom: 1px solid #e3e3e350;
+	.contact-list{
+		li{
+			.icon{
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
 .header-section {
 	position: absolute;
 	top: 0;
@@ -556,6 +570,57 @@
 			z-index: 999;
 			padding-top: 0;
 			background: transparent;
+		}
+	}
+	&.header-version5 {
+		background: transparent;
+		position: relative;
+		z-index: 999;
+		.header-common-wrapper {
+			background: $black;
+			border-radius: 0 0 20px 20px;
+			padding: 14px 36px;
+			.sidebar__toggle {
+				background: $p2-clr;
+				border-radius: 20px;
+				width: 42px;
+				min-width: 42px;
+				height: 42px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 26px;
+					object-fit: contain;
+				}
+			}
+			.search-trigger {
+				border-color: $white;
+				i {
+					color: $white;
+				}
+			}
+			.header-main-light {
+				.main-menu {
+					ul {
+						li {
+							a {
+								color: $white;
+							}
+							.submenu {
+								li {
+									a {
+										color: $black;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			@include breakpoint(max-xl) {
+				padding: 14px 14px;
+			}
 		}
 	}
 }
