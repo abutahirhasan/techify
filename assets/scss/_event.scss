@@ -100,7 +100,7 @@
 			object-fit: contain;
 		}
 		&:hover {
-			.content-in{
+			.content-in {
 				background: $p4-clr;
 				h3,
 				a,
@@ -114,13 +114,13 @@
 				}
 			}
 		}
-		@include breakpoint(max-xl){
-			.content-in{
+		@include breakpoint(max-xl) {
+			.content-in {
 				padding: 22px 20px;
 			}
 		}
-		@include breakpoint(max-md){
-			.content-in{
+		@include breakpoint(max-md) {
+			.content-in {
 				margin-top: 10px;
 				width: 100%;
 				padding: 22px 20px;
@@ -500,3 +500,135 @@
 	}
 }
 //Providing Items
+
+//Hosting Style
+.hosting-connect-item {
+	.arrows {
+		width: 50px;
+		height: 50px;
+		transform: rotate(-18deg);
+		border: 1px solid $white;
+		transition: all 0.4s;
+	}
+	.text-area {
+		transition: all 0.4s;
+	}
+	.thumb {
+		transition: all 0.4s;
+		img {
+			transition: all 0.4s;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.arrows {
+			width: 40px;
+			height: 40px;
+			min-width: 40px;
+		}
+	}
+	&:hover {
+		.thumb {
+			img {
+				transform: scale(1.1);
+			}
+		}
+		.arrows {
+			transform: rotate(-0deg);
+			border: 1px solid $p2-clr;
+			background: $p2-clr;
+		}
+	}
+}
+//Hosting Style
+
+//Hosting Style 02
+.hosting-information-cloude {
+	display: grid;
+	gap: 26px;
+	.hosting-info-items {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	.line {
+		width: 100%;
+		height: 1px;
+		background: rgb(227, 227, 227, 0.2);
+	}
+	@include breakpoint(max-xl) {
+		gap: 20px;
+		.hosting-info-items {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+		}
+	}
+}
+.hosting-thumb-wrapper {
+	position: relative;
+	.thumb {
+		max-width: 435px;
+		img {
+			width: 100%;
+		}
+	}
+	.hosting-cont-info {
+		border-radius: 20px;
+		padding: 24px;
+		background: linear-gradient(
+			158deg,
+			rgba(39, 218, 183, 0.98) 8.12%,
+			rgba(31, 68, 128, 0.7) 74.4%
+		);
+		position: absolute;
+		right: 60px;
+		bottom: -50px;
+	}
+	.hosting-count {
+		background: $p1-clr;
+		border-radius: 999px;
+		padding: 25px 12px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -20px;
+		.count-text,
+		.count {
+			font-size: 27px;
+			font-weight: 500;
+			color: $white;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.hosting-cont-info {
+			padding: 24px;
+			right: 10px;
+			bottom: 10px;
+		}
+		.hosting-count {
+			padding: 25px 12px;
+			left: 10px;
+			.count-text,
+			.count {
+				font-size: 27px;
+				font-weight: 500;
+				color: $white;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.hosting-count {
+			padding: 25px 12px;
+			left: 10px;
+			top: 10px;
+			transform: translateY(0);
+		}
+		.thumb {
+			max-width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+//Hosting Style 02
