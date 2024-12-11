@@ -46,6 +46,15 @@
 			}
 		}
 	}
+	&.blog-cus6{
+		&:hover{
+			background: $p4-clr;
+			div,i,span,a{
+				color: $white !important;
+			}
+			border-color: $p4-clr;
+		}
+	}
 }
 .blog-arrow1 {
 	&:hover {

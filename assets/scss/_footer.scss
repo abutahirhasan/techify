@@ -234,40 +234,99 @@
 			}
 		}
 	}
-	&.footer-style5{
-		.footer-bottom{
+	&.footer-style5 {
+		.footer-bottom {
 			border-top: 1px solid rgb(255, 255, 255, 0.1);
 		}
-		.footer-content{
-			.form-cmn-style{
+		.footer-content {
+			.form-cmn-style {
 				border: 1px solid rgba(227, 227, 227, 0.103);
 				background: #121212;
-				input{
+				input {
 					color: $white;
-					&::placeholder{
+					&::placeholder {
 						color: $white;
 					}
 				}
 			}
 		}
-		.logo-big{
+		.logo-big {
 			max-width: 740px;
 			margin: 60px auto;
 			display: block;
-			img{
+			img {
 				width: 100%;
 				object-fit: contain;
 			}
-			@include breakpoint(max-xxl){
+			@include breakpoint(max-xxl) {
 				max-width: 500px;
 			}
-			@include breakpoint(max-md){
+			@include breakpoint(max-md) {
 				max-width: 400px;
 				margin: 50px auto;
 			}
-			@include breakpoint(max-md){
+			@include breakpoint(max-md) {
 				margin: 30px auto;
 				max-width: 250px;
+			}
+		}
+	}
+	&.footer-style6 {
+		.footer-widgets-wrapper {
+			display: flex;
+			justify-content: space-between;
+			gap: 30px;
+			.have-mind-box {
+				padding: 30px 30px;
+				max-width: 300px;
+			}
+			.single-box-maintain {
+				max-width: 325px;
+			}
+			@include breakpoint(max-xl) {
+				gap: 34px 20px;
+				.have-mind-box {
+					padding: 20px 20px;
+					max-width: 250px;
+				}
+				.single-box-maintain {
+					max-width: 290px;
+				}
+			}
+			@include breakpoint(max-lg) {
+				flex-wrap: wrap;
+				justify-content: center;
+				.have-mind-box {
+					padding: 20px 20px;
+					max-width: 50%;
+				}
+				.single-box-maintain {
+					max-width: 45%;
+				}
+			}
+			@include breakpoint(max-md) {
+				flex-wrap: wrap;
+				justify-content: center;
+				.have-mind-box {
+					padding: 20px 20px;
+					max-width: 44%;
+				}
+				.single-box-maintain {
+					max-width: 45%;
+				}
+			}
+			@media screen and (max-width: 550px) {
+				flex-wrap: wrap;
+				justify-content: center;
+				.have-mind-box {
+					padding: 20px 20px;
+					max-width: 100%;
+					margin: 0 auto;
+				}
+				.single-box-maintain {
+					max-width: initial;
+					margin: 0 auto;
+				}
 			}
 		}
 	}

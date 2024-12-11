@@ -3180,6 +3180,71 @@ footer {
     max-width: 250px;
   }
 }
+.footer-section.footer-style6 .footer-widgets-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-section.footer-style6 .footer-widgets-wrapper .have-mind-box {
+  padding: 30px 30px;
+  max-width: 300px;
+}
+.footer-section.footer-style6 .footer-widgets-wrapper .single-box-maintain {
+  max-width: 325px;
+}
+@media (max-width: 1199px) {
+  .footer-section.footer-style6 .footer-widgets-wrapper {
+    gap: 34px 20px;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .have-mind-box {
+    padding: 20px 20px;
+    max-width: 250px;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .single-box-maintain {
+    max-width: 290px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-section.footer-style6 .footer-widgets-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .have-mind-box {
+    padding: 20px 20px;
+    max-width: 50%;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .single-box-maintain {
+    max-width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section.footer-style6 .footer-widgets-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .have-mind-box {
+    padding: 20px 20px;
+    max-width: 44%;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .single-box-maintain {
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer-section.footer-style6 .footer-widgets-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .have-mind-box {
+    padding: 20px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .footer-section.footer-style6 .footer-widgets-wrapper .single-box-maintain {
+    max-width: initial;
+    margin: 0 auto;
+  }
+}
 
 .footer-widgets-wrapper .single-footer-widget .widget-head {
   margin-bottom: 26px;
@@ -5678,6 +5743,13 @@ footer {
 }
 .blog-items.style4:hover .content {
   background: var(--white) !important;
+}
+.blog-items.blog-cus6:hover {
+  background: var(--p4-clr);
+  border-color: var(--p4-clr);
+}
+.blog-items.blog-cus6:hover div, .blog-items.blog-cus6:hover i, .blog-items.blog-cus6:hover span, .blog-items.blog-cus6:hover a {
+  color: var(--white) !important;
 }
 
 .blog-arrow1:hover span {
