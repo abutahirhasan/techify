@@ -271,7 +271,7 @@ CSS TABLE OF CONTENTS
 			},
 		});
 
-		//--Testimonial Slide
+		//--team Slide
 		const teamWrapper = new Swiper(".team-wrapper", {
 			spaceBetween: 24,
 			speed: 500,
@@ -286,6 +286,32 @@ CSS TABLE OF CONTENTS
 				},
 				767: {
 					slidesPerView: 3,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
+		//--Testimonial 06 Slide
+		const testimonialWrapper6 = new Swiper(".testimonial-wrapper6", {
+			spaceBetween: 24,
+			speed: 500,
+			loop: true,
+			centeredSlides: true,
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 2.8,
+				},
+				991: {
+					slidesPerView: 2.8,
 				},
 				575: {
 					slidesPerView: 2,

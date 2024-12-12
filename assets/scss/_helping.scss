@@ -155,6 +155,22 @@
 			}
 		}
 	}
+	&.style6 {
+		.array-prev,
+		.array-next {
+			background: rgba(37, 37, 37, 0.05);
+			i {
+				color: $p1-clr !important;
+			}
+			&.active,
+			&:hover {
+				background-color: $p1-clr;
+				i {
+					color: $white !important;
+				}
+			}
+		}
+	}
 }
 
 //pagination default

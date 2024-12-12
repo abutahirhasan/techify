@@ -342,7 +342,7 @@
 			margin-bottom: 28px;
 			text-align: center;
 		}
-		.quote5{
+		.quote5 {
 			margin: 0 auto;
 		}
 		.naming-area {
@@ -369,6 +369,50 @@
 		margin-top: 20px;
 		img {
 			width: 100%;
+		}
+	}
+}
+
+//Testimonial Style06
+.testimonial-items6 {
+	background: $white;
+	margin-top: 50px;
+	transition: all 0.4s;
+	.thumb-author-area {
+		margin-top: -90px;
+	}
+	p {
+		color: $black;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	&:hover {
+		background: $p5-clr;
+		h3,
+		span,
+		p {
+			color: $black;
+		}
+		.ratting-area {
+			i {
+				color: $black !important;
+			}
+		}
+		.quote5 {
+			filter: brightness(0);
+			opacity: 0.5;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		p {
+			font-size: 18px;
+			line-height: 25px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 24px 20px;
+		.thumb-author-area {
+			margin-top: -60px;
 		}
 	}
 }
