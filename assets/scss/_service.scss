@@ -41,7 +41,7 @@
 				width: 60px;
 				height: 60px;
 				min-width: 60px;
-				img{
+				img {
 					width: 30px;
 				}
 			}
@@ -57,10 +57,10 @@
 		}
 	}
 }
-.services-section{
-	&.main-style{
-		.service-item{
-			.icon{
+.services-section {
+	&.main-style {
+		.service-item {
+			.icon {
 				border: unset;
 			}
 		}
@@ -68,25 +68,25 @@
 }
 
 //Service Details
-.category-service{
-	.cates{
+.category-service {
+	.cates {
 		display: grid;
 		gap: 20px;
-		li{
-			a{
+		li {
+			a {
 				border: 1px solid #ccc;
 				padding: 12px 20px;
 				border-radius: 100px;
-				.just-serial{
+				.just-serial {
 					font-size: 16px;
 					color: $pra;
 				}
 				transition: all 0.5s;
-				&:hover{
+				&:hover {
 					background: $p2-clr;
 					border-color: $p2-clr;
 					span,
-					i{
+					i {
 						color: $white !important;
 					}
 				}
@@ -94,31 +94,137 @@
 		}
 	}
 }
-.download-area{
+.download-area {
 	display: grid;
 	gap: 20px;
-	.download-item{
-		background: #F5F6F8;
+	.download-item {
+		background: #f5f6f8;
 		border-radius: 20px;
 		padding: 16px 24px;
 	}
-	.social-wrapper{
-		a{
-			background: #F5F6F8;
-			i{
+	.social-wrapper {
+		a {
+			background: #f5f6f8;
+			i {
 				color: $black;
 			}
-			&:hover{
+			&:hover {
 				background: $p2-clr;
-				i{
+				i {
 					color: $white;
 				}
-				svg{
-					path{
+				svg {
+					path {
 						stroke: $white;
 					}
 				}
 			}
+		}
+	}
+}
+
+//Gain Services Style
+.data-gain-content-wrap {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px 60px;
+	.thumb {
+		max-width: 300px;
+		img {
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-md) {
+		gap: 24px 24px;
+	}
+	@include breakpoint(max-sm) {
+		gap: 20px 24px;
+		flex-wrap: wrap;
+		.thumb {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+.data-gain-counter {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	align-items: center;
+	margin-bottom: 64px;
+	.data-counter-item {
+		h2 {
+			margin-bottom: 5px;
+			.count,
+			.count-text {
+				color: $black;
+			}
+			span {
+				font-size: 72px;
+				font-weight: 600;
+				line-height: 78px;
+			}
+			.sorke-text {
+				-webkit-text-stroke: 1px #000;
+				-webkit-text-fill-color: #fff;
+				-webkit-animation: fill 0.5s infinite alternate;
+			}
+		}
+	}
+	.line {
+		width: 100px;
+		height: 1px;
+		background: #000;
+	}
+	@include breakpoint(max-xl) {
+		margin-bottom: 20px;
+		.data-counter-item {
+			h2 {
+				margin-bottom: 5px;
+				span {
+					font-size: 58px;
+					font-weight: 600;
+					line-height: 60px;
+				}
+			}
+		}
+		.line {
+			width: 30px;
+		}
+	}
+	@include breakpoint(max-md) {
+		margin-bottom: 20px;
+		.data-counter-item {
+			h2 {
+				margin-bottom: 5px;
+				span {
+					font-size: 36px;
+					font-weight: 600;
+					line-height: 40px;
+				}
+			}
+		}
+		.line {
+			width: 30px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		margin-bottom: 20px;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		.data-counter-item {
+			h2 {
+				margin-bottom: 5px;
+				span {
+					font-size: 27px;
+					font-weight: 600;
+					line-height: 40px;
+				}
+			}
+		}
+		.line {
+			display: none;
 		}
 	}
 }
