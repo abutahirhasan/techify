@@ -524,6 +524,7 @@
 		background: $black;
 		padding-top: 24px;
 		position: relative;
+		overflow: initial !important;
 		z-index: 1;
 		.header-common-wrapper {
 			background: $bg-color-5;

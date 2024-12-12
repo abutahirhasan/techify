@@ -3935,6 +3935,7 @@ footer {
   background: var(--black);
   padding-top: 24px;
   position: relative;
+  overflow: initial !important;
   z-index: 1;
 }
 .header-1.header-version4 .header-common-wrapper {
@@ -5026,7 +5027,7 @@ footer {
 .banner-section.hero-style4 {
   background: var(--black);
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .banner-section.hero-style4 .hero-content-version4 {
   padding: 20px 0 5px;
