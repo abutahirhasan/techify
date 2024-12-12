@@ -153,10 +153,10 @@
 		}
 	}
 
-	&.style6{
+	&.style6 {
 		input,
 		textarea,
-		.nice-select{
+		.nice-select {
 			background: rgb(255, 255, 255, 0.1);
 			border: 1px solid rgb(255, 255, 255, 0.1) !important;
 		}
@@ -188,20 +188,27 @@
 	.contact-info {
 		border-radius: 20px;
 		background: $white;
-		box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-		padding: 34px 34px;
+		box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+		padding: 20px 36px;
 		.icon {
 			width: 70px;
 			height: 70px;
-			background: $p1-clr;
+			min-width: 70px;
+			background: $p2-clr;
 			border-radius: 50%;
-			margin-bottom: 30px;
 			display: flex;
 			align-items: center;
+			transition: all 0.4s;
 			justify-content: center;
 			i {
 				font-size: 24px;
-				color: $black;
+				transition: all 0.4s;
+				color: $white;
+			}
+		}
+		&:hover{
+			.icon{
+				background: $p1-clr;
 			}
 		}
 		@include breakpoint(max-xl) {
@@ -209,7 +216,7 @@
 			.icon {
 				width: 50px;
 				height: 50px;
-				margin-bottom: 20px;
+				min-width: 50px;
 				i {
 					font-size: 20px;
 				}
@@ -249,5 +256,24 @@
 	}
 	@include breakpoint(max-md) {
 		padding: 24px 24px;
+	}
+}
+
+.get-inform.get-inform-main{
+	border-bottom: 5px solid #E3E3E3 !important;
+	textarea,
+	input,
+	.nice-select{
+		border: 1px solid #E3E3E3 !important;
+		color: #6d6b6b !important;
+		&::placeholder{
+			color: #6d6b6b !important;
+		}
+		.current{
+			color: #6d6b6b !important;
+		}
+		&::after{
+			border-color: #6d6b6b;
+		}
 	}
 }

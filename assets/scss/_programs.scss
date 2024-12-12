@@ -395,3 +395,22 @@
 		}
 	}
 }
+
+
+//Error Section 
+.error-thumb{
+	@include breakpoint(max-xxl){
+		max-width: 500px;
+		img{
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-lg){
+		max-width: 500px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+		}
+	}
+}
+//Error Section 
