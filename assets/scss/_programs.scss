@@ -264,13 +264,13 @@
 			}
 		}
 	}
-	@include breakpoint(max-xl){
-		img{
+	@include breakpoint(max-xl) {
+		img {
 			max-width: 250px;
 		}
 	}
-	@include breakpoint(max-lg){
-		img{
+	@include breakpoint(max-lg) {
+		img {
 			max-width: 150px;
 			display: none;
 		}
@@ -293,38 +293,105 @@
 			}
 		}
 	}
-	@include breakpoint(max-lg){
-		.main-man{
+	@include breakpoint(max-lg) {
+		.main-man {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
 		}
 	}
-	@include breakpoint(max-sm){
-		.main-man{
+	@include breakpoint(max-sm) {
+		.main-man {
 			display: none;
 		}
 	}
 }
-.last-counting{
-	@include breakpoint(max-sm){
+.last-counting {
+	@include breakpoint(max-sm) {
 		display: grid !important;
 	}
 }
 //Tech Pro Style
 
 //Hosting Ex
-.hosting-exprience-wrap{
+.hosting-exprience-wrap {
 	padding: 60px 20px;
-	.section-title{
+	.section-title {
 		max-width: 1055px;
 		margin: 0 auto;
-		.common-btn{
-			background: rgba(0, 0, 0, 0.10);
+		.common-btn {
+			background: rgba(0, 0, 0, 0.1);
 		}
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		padding: 40px 20px;
+	}
+}
+
+//Empower Items6
+.empower-itmes6 {
+	transition: all 0.4s;
+	.icon {
+		background: $white !important;
+	}
+	&.active,
+	&:hover {
+		background: $p2-clr !important;
+		h3,
+		a,
+		i {
+			color: $white !important;
+		}
+		.common-btn,
+		.icon {
+			border-color: rgba(255, 255, 255, 0.1) !important;
+			background: rgba(255, 255, 255, 0.1) !important;
+			img {
+				filter: brightness(25) !important;
+			}
+		}
+	}
+}
+.free-trail-wrapper {
+	padding: 80px 60px;
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	align-items: center;
+	.free-trail-content {
+		max-width: 560px;
+		.subtitle {
+			letter-spacing: 4px;
+		}
+	}
+	.free-trail-right {
+		.footer-ingredient-inner {
+			display: flex;
+			align-items: center;
+			.form-cmn-style {
+				width: 272px;
+				input {
+					color: $white;
+					font-size: 14px;
+					&::placeholder {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 60px 20px;
+		.free-trail-content {
+			max-width: 560px;
+			text-align: center;
+			margin: 0 auto;
+			.subtitle {
+				letter-spacing: 4px;
+			}
+		}
 	}
 }
