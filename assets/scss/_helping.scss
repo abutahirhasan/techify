@@ -173,6 +173,20 @@
 	}
 }
 
+.img-hover{
+	overflow: hidden;
+	transition: all 0.4s;
+	img{
+		overflow: hidden;
+		transition: all 0.4s;
+	}
+	&:hover{
+		img{
+			transform: scale(1.1);
+		}
+	}
+}
+
 //pagination default
 
 .mt-10 {

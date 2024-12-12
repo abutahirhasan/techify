@@ -159,3 +159,127 @@
 		}
 	}
 }
+
+//Team Section 06
+.team-unique-wrapper6 {
+	display: grid;
+	gap: 24px;
+	.line {
+		width: 100%;
+		height: 1px;
+		background: #e3e3e3;
+	}
+	.team-unique-item6 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		.team-unique-inner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 835px;
+			gap: 14px 30px;
+			.cont {
+				width: 365px;
+			}
+			p {
+				max-width: 465px;
+			}
+		}
+		.arrow-similar {
+			width: 50px;
+			height: 50px;
+			min-width: 50px;
+			background: $white;
+			transition: all 0.4s;
+		}
+		&:hover {
+			.arrow-similar {
+				background: $p4-clr;
+				img {
+					filter: brightness(25);
+				}
+			}
+		}
+		.team-unique {
+			position: absolute;
+			right: 10%;
+			top: -110%;
+			max-width: 254px;
+			height: 229px;
+			border-radius: 20px;
+			transition: all 0.4s;
+			transform: rotateX(90deg);
+			z-index: 1;
+		}
+		&:hover {
+			.team-unique {
+				transform: rotateX(0deg);
+			}
+		}
+		@include breakpoint(max-xl) {
+			gap: 24px;
+			.team-unique-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				max-width: initial;
+				gap: 14px 30px;
+				.cont {
+					width: 365px;
+				}
+				p {
+					max-width: 465px;
+				}
+			}
+		}
+		@include breakpoint(max-lg) {
+			gap: 24px;
+			.team-unique-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				max-width: initial;
+				gap: 14px 30px;
+				.cont {
+					width: 265px;
+				}
+				p {
+					max-width: 465px;
+				}
+			}
+		}
+		@include breakpoint(max-md) {
+			gap: 24px;
+			flex-wrap: wrap;
+			display: grid;
+			justify-content: center;
+			text-align: center;
+			.team-unique-inner {
+				display: flex;
+				flex-wrap: wrap;
+				display: grid;
+				align-items: center;
+				justify-content: center;
+				max-width: initial;
+				gap: 14px 30px;
+				.cont {
+					width: 265px;
+					margin: 0 auto;
+				}
+				p {
+					max-width: 465px;
+					margin: 0 auto;
+				}
+			}
+			.arrow-similar {
+				margin: 0 auto;
+			}
+			.team-unique {
+				display: none;
+			}
+		}
+	}
+}
+//Team Section 06

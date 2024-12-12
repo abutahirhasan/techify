@@ -152,6 +152,16 @@
 			padding: 24px 24px;
 		}
 	}
+
+	&.style6{
+		input,
+		textarea,
+		.nice-select{
+			background: rgb(255, 255, 255, 0.1);
+			border: 1px solid rgb(255, 255, 255, 0.1) !important;
+		}
+	}
+
 	&.get-inform-black {
 		border: 2px solid $p5-clr;
 		textarea,
