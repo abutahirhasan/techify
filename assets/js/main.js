@@ -915,6 +915,16 @@ CSS TABLE OF CONTENTS
 		// End Document Ready Function
 	});
 
+	(function () {
+		// Check if the container element exists
+		var containerEl = document.querySelector(".mixitup-filter");
+
+		if (containerEl) {
+			// Initialize MixItUp if the container exists
+			var mixer = mixitup(containerEl);
+		}
+	})();
+
 	// progress-area
 	let progressBars = $(".progress-area");
 	let observer = new IntersectionObserver(function (progressBars) {

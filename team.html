@@ -371,10 +371,19 @@
     <!-- Banner Section Start -->
 
     <!-- Team ion Start -->
-    <section class="team-sections fix">
+    <!-- Global Portfolio start -->
+    <section class="global-portfolio space-top pb-120 n0-bg">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="mixitup-button-area pb-40">
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".business">Seo Expert</button>
+                <button type="button" class="control" data-filter=".green">Markeing Expert</button>
+                <button type="button" class="control" data-filter=".pink">Software Analysist</button>
+                <button type="button" class="control" data-filter=".finance">Data Analysist</button>
+                <button type="button" class="control d-none" data-filter=".agency">Agency</button>
+            </div>
+            <div class="masonry-minimal-wrap mixitup-filter">
+                <div class="portfolio3-grid-item filtering-item mix green d-center">
                     <div class="team-items">
                         <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
                             <img src="assets/img/team/team1.jpg" alt="img" class="rounded-4 w-100">
@@ -382,15 +391,15 @@
                         <div class="content d-flex justify-content-between align-items-center">
                             <div class="cont">
                                 <h3 class="black-clr mb-1">
-                                    <a href="#" class="black-clr fw-semibold">Kristin Watson</a>
+                                    <a href="team-details.html" class="black-clr fw-semibold">Kristin Watson</a>
                                 </h3>
                                 <p class="pra fs-eight">
                                     Dog Trainer
                                 </p>
                             </div>
                             <div class="plus-icon">
-                                <div class="icons p2-bg d-center">
-                                    <i class="fa-solid fa-plus white-clr"></i>
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
                                 </div>
                                 <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
                                     <a href="#" class="rounded-circle blackbg">
@@ -415,7 +424,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-">
+                <div class="portfolio3-grid-item filtering-item mix pink business agency finance d-center">
                     <div class="team-items">
                         <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
                             <img src="assets/img/team/team2.jpg" alt="img" class="rounded-4 w-100">
@@ -423,15 +432,15 @@
                         <div class="content d-flex justify-content-between align-items-center">
                             <div class="cont">
                                 <h3 class="black-clr mb-1">
-                                    <a href="#" class="black-clr fw-semibold">Robert Fox</a>
+                                    <a href="team-details.html" class="black-clr fw-semibold">Robert Fox</a>
                                 </h3>
                                 <p class="pra fs-eight">
                                     President of Sales
                                 </p>
                             </div>
                             <div class="plus-icon">
-                                <div class="icons p2-bg d-center">
-                                    <i class="fa-solid fa-plus white-clr"></i>
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
                                 </div>
                                 <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
                                     <a href="#" class="rounded-circle blackbg">
@@ -456,7 +465,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-">
+                <div class="portfolio3-grid-item filtering-item mix green finance d-center">
                     <div class="team-items">
                         <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
                             <img src="assets/img/team/team3.jpg" alt="img" class="rounded-4 w-100">
@@ -464,15 +473,138 @@
                         <div class="content d-flex justify-content-between align-items-center">
                             <div class="cont">
                                 <h3 class="black-clr mb-1">
-                                    <a href="#" class="black-clr fw-semibold">Floyd Miles</a>
+                                    <a href="team-details.html" class="black-clr fw-semibold">Floyd Miles</a>
                                 </h3>
                                 <p class="pra fs-eight">
                                     Medical Assistant
                                 </p>
                             </div>
                             <div class="plus-icon">
-                                <div class="icons p2-bg d-center">
-                                    <i class="fa-solid fa-plus white-clr"></i>
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
+                                </div>
+                                <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3881 7.49266L16.3338 0.825195H14.9249L9.76215 6.61446L5.63871 0.825195H0.882812L7.11826 9.57959L0.882812 16.5715H2.29185L7.7438 10.4578L12.0985 16.5715H16.8544L10.3877 7.49266H10.3881ZM8.45818 9.65672L7.8264 8.78498L2.79954 1.84844H4.96374L9.02047 7.44645L9.65225 8.31819L14.9255 15.5947H12.7613L8.45818 9.65705V9.65672Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio3-grid-item filtering-item mix pink business agency blue d-center">
+                    <div class="team-items">
+                        <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
+                            <img src="assets/img/team/team4.png" alt="img" class="rounded-4 w-100">
+                        </div>
+                        <div class="content d-flex justify-content-between align-items-center">
+                            <div class="cont">
+                                <h3 class="black-clr mb-1">
+                                    <a href="team-details.html" class="black-clr fw-semibold">Jacob Jones</a>
+                                </h3>
+                                <p class="pra fs-eight">
+                                    Marketing Coordinator
+                                </p>
+                            </div>
+                            <div class="plus-icon">
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
+                                </div>
+                                <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3881 7.49266L16.3338 0.825195H14.9249L9.76215 6.61446L5.63871 0.825195H0.882812L7.11826 9.57959L0.882812 16.5715H2.29185L7.7438 10.4578L12.0985 16.5715H16.8544L10.3877 7.49266H10.3881ZM8.45818 9.65672L7.8264 8.78498L2.79954 1.84844H4.96374L9.02047 7.44645L9.65225 8.31819L14.9255 15.5947H12.7613L8.45818 9.65705V9.65672Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio3-grid-item filtering-item mix pink business finance d-center">
+                    <div class="team-items">
+                        <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
+                            <img src="assets/img/team/team5.png" alt="img" class="rounded-4 w-100">
+                        </div>
+                        <div class="content d-flex justify-content-between align-items-center">
+                            <div class="cont">
+                                <h3 class="black-clr mb-1">
+                                    <a href="team-details.html" class="black-clr fw-semibold">Bessie Cooper</a>
+                                </h3>
+                                <p class="pra fs-eight">
+                                    Web Designer
+                                </p>
+                            </div>
+                            <div class="plus-icon">
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
+                                </div>
+                                <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3881 7.49266L16.3338 0.825195H14.9249L9.76215 6.61446L5.63871 0.825195H0.882812L7.11826 9.57959L0.882812 16.5715H2.29185L7.7438 10.4578L12.0985 16.5715H16.8544L10.3877 7.49266H10.3881ZM8.45818 9.65672L7.8264 8.78498L2.79954 1.84844H4.96374L9.02047 7.44645L9.65225 8.31819L14.9255 15.5947H12.7613L8.45818 9.65705V9.65672Z"
+                                                fill="black" />
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="rounded-circle blackbg">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio3-grid-item filtering-item mix green agency d-center">
+                    <div class="team-items">
+                        <div class="thumb w-100 rounded-4 mb-lg-4 mb-3">
+                            <img src="assets/img/team/team6.png" alt="img" class="rounded-4 w-100">
+                        </div>
+                        <div class="content d-flex justify-content-between align-items-center">
+                            <div class="cont">
+                                <h3 class="black-clr mb-1">
+                                    <a href="team-details.html" class="black-clr fw-semibold">Eleanor Pena</a>
+                                </h3>
+                                <p class="pra fs-eight">
+                                    Nursing Assistant
+                                </p>
+                            </div>
+                            <div class="plus-icon">
+                                <div class="icons cmn-bg d-center">
+                                    <i class="fa-solid fa-plus black-clr"></i>
                                 </div>
                                 <div class="social-wrapper d-grid flex-wrap align-items-center gap-xxl-2 gap-2">
                                     <a href="#" class="rounded-circle blackbg">
@@ -500,6 +632,7 @@
             </div>
         </div>
     </section>
+    <!-- Global Portfolio end -->
 
     <!-- Faq Section Start -->
     <section class="faq-section section-padding fix">
@@ -878,6 +1011,8 @@
     <script src="assets/js/spilitext-gsap.js"></script>
     <!--<< Valina Tilt Js >>-->
     <script src="assets/js/vanilla-tilt.min.js"></script>
+    <!--<< Mixitup Js >>-->
+    <script src="assets/js/mixitup.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
 </body>

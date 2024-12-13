@@ -283,3 +283,90 @@
 	}
 }
 //Team Section 06
+
+//Team Section Main
+.team-section-main {
+	.plus-icon {
+		.icons {
+			&:hover {
+				background: $p2-clr !important;
+				i {
+					color: $white !important;
+				}
+			}
+		}
+	}
+}
+//Team Section Main
+
+//Global Portfolio
+.global-portfolio {
+	.mixitup-button-area {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 9px 36px;
+		flex-wrap: wrap;
+		.control {
+			position: relative;
+			display: block;
+			cursor: pointer;
+			font-size: 25px;
+			font-weight: 500;
+			color: #000;
+			padding: 9px 30px;
+			border: 1px solid $p4-clr;
+			border-radius: 100px;
+			&.mixitup-control-active {
+				color: $white;
+				background: $p1-clr;
+				border-color: $p1-clr;
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 9px 20px;
+			.control {
+				font-size: 16px;
+				padding: 7px 20px;
+			}
+		}
+		@include breakpoint(max-md) {
+			gap: 9px 20px;
+			flex-wrap: wrap;
+		}
+	}
+	.masonry-minimal-wrap {
+		column-count: 3;
+		align-items: flex-start;
+		overflow: hidden;
+		.portfolio3-grid-item {
+			position: relative;
+			margin: 0 4px 24px;
+			z-index: 1;
+			.fitness-metallic {
+				position: absolute;
+				bottom: 30px;
+				text-align: center;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.4s;
+			}
+			@include breakpoint(max-md) {
+				.fitness-metallic {
+					bottom: 20px;
+				}
+			}
+		}
+		@include breakpoint(max-xl) {
+			.portfolio3-grid-item {
+				margin: 0 0px 16px;
+			}
+		}
+		@include breakpoint(max-md) {
+			column-count: 2;
+		}
+		@include breakpoint(max-xs) {
+			column-count: 1;
+		}
+	}
+}
