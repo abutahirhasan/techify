@@ -138,6 +138,18 @@
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: rgb(83, 83, 83, 0.2);
 	}
+	&.empower-item-main {
+		.serial {
+			-webkit-text-stroke: 1px $pra;
+			text-stroke: 4px $pra;
+			-webkit-text-fill-color: $white;
+		}
+		.icon {
+			img {
+				filter: brightness(25);
+			}
+		}
+	}
 	&:hover {
 		background: $p5-clr;
 		p {
@@ -396,21 +408,34 @@
 	}
 }
 
-
-//Error Section 
-.error-thumb{
-	@include breakpoint(max-xxl){
+//Error Section
+.error-thumb {
+	@include breakpoint(max-xxl) {
 		max-width: 500px;
-		img{
+		img {
 			width: 100%;
 		}
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		max-width: 500px;
 		margin: 0 auto;
-		img{
+		img {
 			width: 100%;
 		}
 	}
 }
-//Error Section 
+//Error Section
+
+
+//Project Details 
+.project-information{
+	padding: 28px 28px;
+	position: absolute;
+	@include breakpoint(max-xxl){
+		position: initial;
+	}
+	@include breakpoint(max-xs){
+		padding: 24px 20px;
+	}
+}
+//Project Details 

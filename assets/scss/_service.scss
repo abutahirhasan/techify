@@ -74,16 +74,28 @@
 		gap: 20px;
 		li {
 			a {
-				border: 1px solid #ccc;
+				border: 1px solid $cmnbg;
 				padding: 12px 20px;
 				border-radius: 100px;
+				background: $cmnbg;
+				font-size: 14px;
+				color: $pra;
 				.just-serial {
-					font-size: 16px;
-					color: $pra;
+					width: 32px;
+					height: 32px;
+					background: $p2-clr;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					i{
+						color: $white;
+					}
 				}
 				transition: all 0.5s;
 				&:hover {
-					background: $p2-clr;
+					color: $white;
+					background: $p1-clr;
 					border-color: $p2-clr;
 					span,
 					i {
@@ -98,8 +110,8 @@
 	display: grid;
 	gap: 20px;
 	.download-item {
-		background: #f5f6f8;
-		border-radius: 20px;
+		background: $cmnbg;
+		border-radius: 100px;
 		padding: 16px 24px;
 	}
 	.social-wrapper {
@@ -119,6 +131,27 @@
 					}
 				}
 			}
+		}
+	}
+}
+.service-preview-next{
+	border-radius: 20px;
+	padding: 22px 60px;
+	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+	background: $white;
+	h3{
+		a{
+			&:hover{
+				color: $p2-clr;
+			}
+		}
+	}
+	@include breakpoint(max-lg){
+		padding: 18px 24px;
+	}
+	@include breakpoint(max-sm){
+		h3{
+			font-size: 15px;
 		}
 	}
 }

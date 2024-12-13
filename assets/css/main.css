@@ -350,21 +350,25 @@ h2 {
   font-size: 70px;
   line-height: 116%;
   font-weight: 500;
+  letter-spacing: -2px;
 }
 .fs-two span,
 h2 span {
   font-size: 48px;
   line-height: 116%;
   font-weight: 500;
+  letter-spacing: -2px;
 }
 @media (max-width: 1399px) {
   .fs-two,
   h2 {
     font-size: 62px;
+    letter-spacing: -1px;
   }
   .fs-two span,
   h2 span {
     font-size: 62px;
+    letter-spacing: -1px;
   }
 }
 @media (max-width: 1199px) {
@@ -401,10 +405,12 @@ h2 span {
   .fs-two,
   h2 {
     font-size: 28px;
+    letter-spacing: -1px;
   }
   .fs-two span,
   h2 span {
     font-size: 28px;
+    letter-spacing: -1px;
   }
 }
 
@@ -412,6 +418,7 @@ h3 {
   font-size: 27px;
   font-weight: 500;
   line-height: 130%;
+  letter-spacing: -1px;
 }
 @media (max-width: 1399px) {
   h3 {
@@ -6982,6 +6989,14 @@ input.main-search-input::placeholder {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(83, 83, 83, 0.2);
 }
+.empower-item.empower-item-main .serial {
+  -webkit-text-stroke: 1px var(--pra);
+  text-stroke: 4px var(--pra);
+  -webkit-text-fill-color: var(--white);
+}
+.empower-item.empower-item-main .icon img {
+  filter: brightness(25);
+}
 .empower-item:hover {
   background: var(--p5-clr);
 }
@@ -7233,6 +7248,21 @@ input.main-search-input::placeholder {
   }
   .error-thumb img {
     width: 100%;
+  }
+}
+
+.project-information {
+  padding: 28px 28px;
+  position: absolute;
+}
+@media (max-width: 1399px) {
+  .project-information {
+    position: initial;
+  }
+}
+@media (max-width: 500px) {
+  .project-information {
+    padding: 24px 20px;
   }
 }
 
@@ -7811,17 +7841,29 @@ input.main-search-input::placeholder {
   gap: 20px;
 }
 .category-service .cates li a {
-  border: 1px solid #ccc;
+  border: 1px solid var(--cmnbg);
   padding: 12px 20px;
   border-radius: 100px;
+  background: var(--cmnbg);
+  font-size: 14px;
+  color: var(--pra);
   transition: all 0.5s;
 }
 .category-service .cates li a .just-serial {
-  font-size: 16px;
-  color: var(--pra);
+  width: 32px;
+  height: 32px;
+  background: var(--p2-clr);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-service .cates li a .just-serial i {
+  color: var(--white);
 }
 .category-service .cates li a:hover {
-  background: var(--p2-clr);
+  color: var(--white);
+  background: var(--p1-clr);
   border-color: var(--p2-clr);
 }
 .category-service .cates li a:hover span,
@@ -7834,8 +7876,8 @@ input.main-search-input::placeholder {
   gap: 20px;
 }
 .download-area .download-item {
-  background: #f5f6f8;
-  border-radius: 20px;
+  background: var(--cmnbg);
+  border-radius: 100px;
   padding: 16px 24px;
 }
 .download-area .social-wrapper a {
@@ -7852,6 +7894,26 @@ input.main-search-input::placeholder {
 }
 .download-area .social-wrapper a:hover svg path {
   stroke: var(--white);
+}
+
+.service-preview-next {
+  border-radius: 20px;
+  padding: 22px 60px;
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  background: var(--white);
+}
+.service-preview-next h3 a:hover {
+  color: var(--p2-clr);
+}
+@media (max-width: 991px) {
+  .service-preview-next {
+    padding: 18px 24px;
+  }
+}
+@media (max-width: 575px) {
+  .service-preview-next h3 {
+    font-size: 15px;
+  }
 }
 
 .data-gain-content-wrap {
