@@ -478,14 +478,18 @@
 	box-shadow: none;
 	border-radius: 20px;
 	padding: 40px;
+	.nice-select,
 	input,
 	textarea {
 		background: $white;
 		border: 1px solid #ccc;
 		width: 100%;
-		border-radius: 20px;
+		border-radius: 100px;
 		padding: 12px 24px;
 		color: #666;
+	}
+	textarea{
+		border-radius: 20px;
 	}
 	.nice-select {
 		border: 1px solid #ccc;
