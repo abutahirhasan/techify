@@ -347,6 +347,11 @@ footer {
 .blackbg {
 	background: $black;
 }
+.cmn-opa{
+	input{
+		background: rgb(246, 242, 234), 40% !important;
+	}
+}
 .white {
 	color: $white;
 }

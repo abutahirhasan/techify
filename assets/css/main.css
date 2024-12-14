@@ -651,6 +651,10 @@ footer {
   background: var(--black);
 }
 
+.cmn-opa input {
+  background: rgb(246, 242, 234), 40% !important;
+}
+
 .white {
   color: var(--white);
 }
@@ -1794,6 +1798,41 @@ footer {
   .getin-wrappper-cart {
     padding: 30px 20px;
   }
+}
+
+.billing-address-content .get-inform {
+  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  background: var(--white);
+}
+.billing-address-content .get-inform h3 {
+  font-size: 27px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 32px;
+}
+.billing-address-content .get-inform input,
+.billing-address-content .get-inform textarea,
+.billing-address-content .get-inform .nice-select {
+  border-color: var(--cmnbg) !important;
+  color: var(--pra) !important;
+  font-size: 14px;
+}
+.billing-address-content .get-inform input::placeholder,
+.billing-address-content .get-inform textarea::placeholder,
+.billing-address-content .get-inform .nice-select::placeholder {
+  color: var(--pra) !important;
+}
+.billing-address-content .get-inform input .current,
+.billing-address-content .get-inform textarea .current,
+.billing-address-content .get-inform .nice-select .current {
+  color: var(--pra) !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.billing-address-content .get-inform input::after,
+.billing-address-content .get-inform textarea::after,
+.billing-address-content .get-inform .nice-select::after {
+  border-color: var(--pra) !important;
 }
 
 .choose-right .video-choose {
