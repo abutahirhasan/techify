@@ -1,8 +1,8 @@
 /*-----------------------------------------------------------------
 
 Template Name: Techify - Technology Tt Solutions HTML Template<
-Author:  authorName
-Author URI: https://themeforest.net/user/authorName/portfolio
+Author:  namespace-it
+Author URI: https://themeforest.net/user/namespace-it
 Version: 1.0.0
 Description: Techify - Technology Tt Solutions HTML Template<
 
