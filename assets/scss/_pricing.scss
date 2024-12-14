@@ -183,12 +183,25 @@
 				z-index: 1;
 			}
 		}
-		@include breakpoint(max-md){
+		@include breakpoint(max-md) {
 			padding: 30px 22px;
 		}
 	}
 	@include breakpoint(max-xxl) {
 		padding: 24px 20px;
+	}
+}
+.pricing-hover1 {
+	transition: all 0.4s;
+	&:hover {
+		background: linear-gradient(
+			180deg,
+			#ffdc26 0%,
+			rgba(255, 220, 38, 0) 100%
+		);
+		.common-btn {
+			background: $p5-clr;
+		}
 	}
 }
 .pricing-tabbing {

@@ -3679,7 +3679,6 @@ footer {
 }
 .footer-widgets-wrapper .single-footer-widget .list-linkes li a:hover i {
   color: var(--p1-clr) !important;
-  transform: rotate(90deg);
 }
 .footer-widgets-wrapper .single-footer-widget .footer-info li {
   display: flex;
@@ -7132,6 +7131,16 @@ input.main-search-input::placeholder {
   .pricing-items {
     padding: 24px 20px;
   }
+}
+
+.pricing-hover1 {
+  transition: all 0.4s;
+}
+.pricing-hover1:hover {
+  background: linear-gradient(180deg, #ffdc26 0%, rgba(255, 220, 38, 0) 100%);
+}
+.pricing-hover1:hover .common-btn {
+  background: var(--p5-clr);
 }
 
 .pricing-tabbing {
